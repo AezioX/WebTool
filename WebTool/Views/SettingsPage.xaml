@@ -4,8 +4,10 @@
              x:Class="WebTool.Views.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Change to Default Theme" TextColor="{DynamicResource MainColor}"/>
-            <Button Text="Change to Aeziox's Theme" TextColor="{DynamicResource MainColor}"/>
+            <Button Text="Change Theme To AezioX's Choice" TextColor="{DynamicResource MainColor}"
+                    Command="{Binding ChangeToAezioXThemeCommand}"/>
+            <Button Text="Change Theme To Default Theme" TextColor="{DynamicResource MainColor}"
+                    Command="{Binding ChangeToDefaultThemeCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
