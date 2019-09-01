@@ -18,4 +18,6 @@
 
     <Image x:Key="FlyoutHeaderImage" Source="Green/Nebula-Green.jpg"/>
 
+    <FlyoutItem x:Key="Tiger" Icon="Green/tiger.png"/>
+
 </ResourceDictionary>
