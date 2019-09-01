@@ -15,4 +15,7 @@
         <Setter Property="BarBackgroundColor" Value="{DynamicResource MainColor}"/>
         <Setter Property="BarTextColor" Value="{DynamicResource MainColor}"/>
     </Style>
+
+    <Image x:Key="FlyoutHeaderImage" Source="Green/Nebula-Green.jpg"/>
+
 </ResourceDictionary>

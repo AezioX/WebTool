@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WebTool.Styles.FlyoutHeader"
+             HeightRequest="100">
+    <Grid BackgroundColor="Black">
+        <Image Aspect="AspectFill"
+               Source="{DynamicResource FlyoutHeaderImage}"
+               Opacity="1"/>
+        <Label Text=""
+               TextColor="#00FF6E"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </Grid>
+</ContentView>

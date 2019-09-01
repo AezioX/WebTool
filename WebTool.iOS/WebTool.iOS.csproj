@@ -130,4 +130,10 @@
       <Name>WebTool</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Green\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Green\Nebula-Green.jpg" />
+  </ItemGroup>
 </Project>
