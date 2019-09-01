@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebTool.Views.SettingsPage"
              Shell.TitleColor="{DynamicResource MainColor}"
+             BackgroundColor="{DynamicResource DarkColor}"
              Title="Settings">
     <ContentPage.Content>
         <StackLayout>
