@@ -49,10 +49,18 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
 
-    <FlyoutItem Title="Data Breach Checker" Icon="{DynamicResource Tiger}">
+    <FlyoutItem Title="Data Breach Checker" Icon="Green/tiger.png">
         <Tab Route="databreachchecker">
             <ShellContent>
                 <pages:DataBreachPage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Settings" Icon="Green/tiger.png">
+        <Tab Route="settings">
+            <ShellContent>
+                <pages:SettingsPage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
