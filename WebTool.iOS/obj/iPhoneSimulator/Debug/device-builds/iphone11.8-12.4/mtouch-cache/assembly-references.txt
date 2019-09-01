@@ -23,3 +23,5 @@
 /Users/aeziox/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 /Users/aeziox/Projects/WebTool/WebTool/bin/Debug/netstandard2.0/WebTool.dll
 /Users/aeziox/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
+/Users/aeziox/.nuget/packages/xamarin.essentials/1.1.0/lib/xamarinios10/Xamarin.Essentials.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.14.0.114/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
