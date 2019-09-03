@@ -1,10 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebTool.Views.DataBreachPage">
+             x:Class="WebTool.Views.DataBreachPage"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Shell.TitleColor="{DynamicResource MainColor}"
+             Title="Data Breach Checker">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="UNDER CONSTRUCTION" TextColor="{DynamicResource MainColor}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0"
+                       Text="{Binding Account}" TextColor="{DynamicResource MainColor}"
+                       Placeholder="Email or Account Name" PlaceholderColor="{DynamicResource MainColor}"
+                       MaxLength="50">
+                </Entry>
+                <Button Grid.Column="1"
+                        Text="Check" TextColor="{DynamicResource MainColor}"
+                        FontAttributes="Bold" FontSize="Medium"
+                        Command="{Binding CheckEmailCommand}"/>
+            </Grid>
+                <ListView ItemTemplate="{DynamicResource dataBreachResultTemplate}"
+                          ItemsSource="{Binding Results}"
+                          BackgroundColor="{DynamicResource DarkColor}"
+                          HasUnevenRows="True"
+                          SeparatorVisibility="None"
+                          SelectionMode="None">
+                </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
