@@ -10,13 +10,21 @@ namespace WebTool.Services.DataBreach
     {
         private HttpClient _httpClient = new HttpClient();
 
+        private const string _baseURL = "https://haveibeenpwned.com/api/v3/breachedaccount/";
+
+        private string _hibpApiKey = new Key().APIKEY;
+
         public DataBreachService()
         {
         }
 
         public async Task<ObservableCollection<BreachResults>> CheckAccountAsync(string account)
         {
+            var output = new ObservableCollection<BreachResults>();
 
+
+
+            return output;
         }
     }
 }
