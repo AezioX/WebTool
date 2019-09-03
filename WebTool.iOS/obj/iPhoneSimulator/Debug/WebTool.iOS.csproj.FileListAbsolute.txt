@@ -58,3 +58,4 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CopyComplete
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.exe
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.pdb
+/Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll

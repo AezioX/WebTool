@@ -15,9 +15,18 @@ namespace WebTool.ViewModels
         {
         }
 
-        private void CheckAccount()
+        private async void CheckAccount()
         {
-            
+            try
+            {
+                var dataBreachCenter = new DataBreachService();
+
+                Results = await dataBreachCenter.CheckAccountAsync(Account);
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+            }
         }
 
         private ObservableCollection<BreachResults> _results;
