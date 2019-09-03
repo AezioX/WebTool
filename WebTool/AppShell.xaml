@@ -6,7 +6,7 @@
              xmlns:pages="clr-namespace:WebTool.Views"
              BackgroundColor="{DynamicResource DarkColor}"
              FlyoutBackgroundColor="{DynamicResource DarkColor}"
-             ForegroundColor="{DynamicResource DarkColor}"
+             ForegroundColor="{DynamicResource MainColor}"
              FlyoutHeaderBehavior="CollapseOnScroll">
     <Shell.FlyoutHeader>
         <styles:FlyoutHeader/>
