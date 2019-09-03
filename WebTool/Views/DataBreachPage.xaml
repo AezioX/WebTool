@@ -20,7 +20,7 @@
                 <Button Grid.Column="1"
                         Text="Check" TextColor="{DynamicResource MainColor}"
                         FontAttributes="Bold" FontSize="Medium"
-                        Command="{Binding CheckEmailCommand}"/>
+                        Command="{Binding CheckAccountCommand}"/>
             </Grid>
                 <ListView ItemTemplate="{DynamicResource dataBreachResultTemplate}"
                           ItemsSource="{Binding Results}"
