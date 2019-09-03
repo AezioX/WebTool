@@ -19,5 +19,7 @@
     <Folder Include="Models\" />
     <Folder Include="Services\" />
     <Folder Include="Styles\" />
+    <Folder Include="Services\DataBreach\" />
+    <Folder Include="Models\DataBreach\" />
   </ItemGroup>
 </Project>
