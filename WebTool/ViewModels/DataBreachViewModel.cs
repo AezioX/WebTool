@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Models.DataBreach;
+using WebTool.Services.DataBreach;
 
 namespace WebTool.ViewModels
 {
