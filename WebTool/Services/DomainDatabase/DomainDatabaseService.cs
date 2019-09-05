@@ -7,7 +7,7 @@ using WebTool.Models.DomainDatabase;
 
 namespace WebTool.Services.DomainDatabase
 {
-    public class DomainDatabaseService
+    public class DomainDatabaseService : IDomainDatabaseService
     {
         private HttpClient _httpClient = new HttpClient();
 
