@@ -13,6 +13,8 @@ namespace WebTool
 
             LoadSavedTheme();
 
+            InitializeApp();
+
             MainPage = new AppShell();
         }
 
@@ -29,6 +31,11 @@ namespace WebTool
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        private void InitializeApp()
+        {
+            AppContainer.RegisterDependencies();
         }
 
         private void LoadSavedTheme()

@@ -1,5 +1,8 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/WebTool.iOS.exe
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/WebTool.iOS.pdb
+/Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Autofac.dll
+/Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Autofac.pdb
+/Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
@@ -58,4 +61,3 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CopyComplete
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.exe
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.pdb
-/Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
