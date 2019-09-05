@@ -1,10 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebTool.Views.DeviceInfoPage">
+             x:Class="WebTool.Views.DeviceInfoPage"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Title="Device Info"
+             Shell.TitleColor="{DynamicResource MainColor}">
     <ContentPage.Content>
         <StackLayout>
-
+            <Button Text="Get" Command="{Binding GetCommand}"
+                    TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding IP}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding DeviceName}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding DeviceModel}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding Manufacturer}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding Version}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding Platform}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding Idiom}"
+                   TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding DeviceType}"
+                   TextColor="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
