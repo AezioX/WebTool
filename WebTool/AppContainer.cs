@@ -3,6 +3,7 @@ using Autofac;
 using WebTool.Views;
 using WebTool.ViewModels;
 using WebTool.Services.DataBreach;
+using WebTool.Services.DeviceInfo;
 
 namespace WebTool
 {
@@ -24,6 +25,8 @@ namespace WebTool
 
             //Services
             builder.RegisterType<DataBreachService>().As<IDataBreachService>();
+            builder.RegisterType<DeviceInfoService>().As<IDeviceInfoService>();
+
 
             _container = builder.Build();
         }
