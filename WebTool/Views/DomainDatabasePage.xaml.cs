@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using WebTool.ViewModels;
 using Xamarin.Forms;
 
 namespace WebTool.Views
@@ -10,6 +10,8 @@ namespace WebTool.Views
         public DomainDatabasePage()
         {
             InitializeComponent();
+
+            BindingContext = new DomainDatabaseViewModel();
         }
     }
 }
