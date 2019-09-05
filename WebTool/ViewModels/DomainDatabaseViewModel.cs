@@ -3,18 +3,26 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Models.DomainDatabase;
+using WebTool.Services.DomainDatabase;
 
 namespace WebTool.ViewModels
 {
     public class DomainDatabaseViewModel : BaseViewModel
     {
+        private IDomainDatabaseService _domainDatabaseService;
+
         public ICommand SearchCommand => new Command(Search);
+
+        public DomainDatabaseViewModel(IDomainDatabaseService domainDatabaseService)
+        {
+            _domainDatabaseService = domainDatabaseService;
+        }
 
         private async void Search()
         {
             try
             {
-                DomainSearchResults = await _domainCenter.CheckDomainsDatabase(Domain);
+                DomainSearchResults = await _domainDatabaseService.CheckDomainsDatabase(Domain);
             }
             catch (Exception ex)
             {

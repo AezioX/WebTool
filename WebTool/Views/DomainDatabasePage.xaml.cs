@@ -11,7 +11,7 @@ namespace WebTool.Views
         {
             InitializeComponent();
 
-            BindingContext = new DomainDatabaseViewModel();
+            BindingContext = AppContainer.Resolve<DomainDatabaseViewModel>();
         }
     }
 }
