@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WebTool.Views.DomainDatabasePage"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Title="Domains Database"
+             Shell.TitleColor="{DynamicResource MainColor}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0"
+                       Text="{Binding Domain}" TextColor="{DynamicResource MainColor}"
+                       Placeholder="Find registered domains" PlaceholderColor="{DynamicResource MainColor}"
+                       MaxLength="50">
+                </Entry>
+                <Button Grid.Column="1"
+                        Text="Search" TextColor="{DynamicResource MainColor}"
+                        FontAttributes="Bold" FontSize="Medium"
+                        Command="{Binding SearchCommand}"/>
+                </Grid>
+                <ListView BackgroundColor="{DynamicResource DarkColor}"
+                          ItemsSource="{Binding DomainSearchResults}"
+                          HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label TextColor="{DynamicResource MainColor}"
+                                       Text="{Binding Domain}"
+                                       FontAttributes="Bold"
+                                       FontSize="Large"/>
+                                    <Label Grid.Column="0"
+                                               TextColor="{DynamicResource MainColor}"
+                                               Text="{Binding Create_date, StringFormat='Creation date: {0:MMMM d, yyyy h:mm tt}'}"
+                                               FontSize="Medium"/>
+                                    <Label Grid.Column="1"
+                                               TextColor="{DynamicResource MainColor}"
+                                               Text="{Binding Expiry_date, StringFormat='Expiration date: {0:MMMM d, yyyy h:mm tt}'}"
+                                               FontSize="Medium"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
