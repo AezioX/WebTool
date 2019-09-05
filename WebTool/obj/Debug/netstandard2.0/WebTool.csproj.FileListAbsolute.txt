@@ -15,3 +15,4 @@
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.dll
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.pdb
+/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.csprojAssemblyReference.cache

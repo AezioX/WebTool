@@ -11,7 +11,7 @@ namespace WebTool.Views
         {
             InitializeComponent();
 
-            BindingContext = new DataBreachViewModel();
+            BindingContext = AppContainer.Resolve<DataBreachViewModel>();
         }
     }
 }

@@ -9,19 +9,20 @@ namespace WebTool.ViewModels
 {
     public class DataBreachViewModel : BaseViewModel
     {
+        private IDataBreachService _dataBreachService;
+
         public ICommand CheckAccountCommand => new Command(CheckAccount);
 
-        public DataBreachViewModel()
+        public DataBreachViewModel(IDataBreachService dataBreachService)
         {
+            _dataBreachService = dataBreachService;
         }
 
         private async void CheckAccount()
         {
             try
             {
-                var dataBreachCenter = new DataBreachService();
-
-                Results = await dataBreachCenter.CheckAccountAsync(Account);
+                Results = await _dataBreachService.CheckAccountAsync(Account);
             }
             catch (Exception ex)
             {
