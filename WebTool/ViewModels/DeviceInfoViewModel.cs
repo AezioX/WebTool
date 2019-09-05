@@ -2,20 +2,24 @@
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using WebTool.Services.DeviceInfo;
 
 namespace WebTool.ViewModels
 {
     public class DeviceInfoViewModel : BaseViewModel
     {
+        private IDeviceInfoService _deviceInfoService;
+
         public ICommand GetCommand => new Command(Get);
 
-        public DeviceInfoViewModel()
+        public DeviceInfoViewModel(IDeviceInfoService deviceInfoService)
         {
+            _deviceInfoService = deviceInfoService;
         }
 
         private async void Get()
         {
-            IP = await _deviceCenter.GetCurrentIPAsync();
+            IP = await _deviceInfoService.GetCurrentIPAsync();
             DeviceName = $"Device Name: {DeviceInfo.Name}";
             DeviceModel = $"Device Model: {DeviceInfo.Model}";
             Manufacturer = $"Manufacturer: {DeviceInfo.Manufacturer}";
