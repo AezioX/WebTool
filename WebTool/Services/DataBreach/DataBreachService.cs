@@ -8,7 +8,7 @@ using WebTool.Models.DataBreach;
 
 namespace WebTool.Services.DataBreach
 {
-    public class DataBreachService
+    public class DataBreachService : IDataBreachService
     {
         private HttpClient _httpClient = new HttpClient();
 
