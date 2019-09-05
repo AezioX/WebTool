@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using WebTool.Models.DomainDatabase;
 
 namespace WebTool.ViewModels
 {
