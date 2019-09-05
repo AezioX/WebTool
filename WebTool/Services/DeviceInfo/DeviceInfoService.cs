@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace WebTool.Services.DeviceInfo
 {
-    public class DeviceInfoService
+    public class DeviceInfoService : IDeviceInfoService
     {
         private HttpClient _httpClient = new HttpClient();
 
