@@ -4,6 +4,7 @@ using WebTool.Views;
 using WebTool.ViewModels;
 using WebTool.Services.DataBreach;
 using WebTool.Services.DeviceInfo;
+using WebTool.Services.DomainDatabase;
 
 namespace WebTool
 {
@@ -18,14 +19,17 @@ namespace WebTool
             //Views
             builder.RegisterType<DataBreachPage>().SingleInstance();
             builder.RegisterType<DeviceInfoPage>().SingleInstance();
+            builder.RegisterType<DomainDatabasePage>().SingleInstance();
 
             //ViewModels
             builder.RegisterType<DataBreachViewModel>().SingleInstance();
             builder.RegisterType<DeviceInfoViewModel>().SingleInstance();
+            builder.RegisterType<DomainDatabaseViewModel>().SingleInstance();
 
             //Services
             builder.RegisterType<DataBreachService>().As<IDataBreachService>();
             builder.RegisterType<DeviceInfoService>().As<IDeviceInfoService>();
+            builder.RegisterType<DomainDatabaseService>().As<IDomainDatabaseService>();
 
 
             _container = builder.Build();
