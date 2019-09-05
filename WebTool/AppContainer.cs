@@ -21,7 +21,7 @@ namespace WebTool
             builder.RegisterType<DataBreachViewModel>().SingleInstance();
 
             //Services
-            //builder.RegisterType<DataBreachService>().As<id
+            builder.RegisterType<DataBreachService>().As<IDataBreachService>();
 
             _container = builder.Build();
         }
