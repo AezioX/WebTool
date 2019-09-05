@@ -25,5 +25,6 @@
     <Folder Include="Models\DataBreach\" />
     <Folder Include="Services\DeviceInfo\" />
     <Folder Include="Models\DomainDatabase\" />
+    <Folder Include="Services\DomainDatabase\" />
   </ItemGroup>
 </Project>
