@@ -11,6 +11,8 @@
                     TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding IP}"
                    TextColor="{DynamicResource MainColor}"/>
+            <BoxView HeightRequest="20"
+                     BackgroundColor="{DynamicResource DarkColor}"/>
             <Label Text="{Binding DeviceName}"
                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding DeviceModel}"
@@ -20,8 +22,6 @@
             <Label Text="{Binding Version}"
                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding Platform}"
-                   TextColor="{DynamicResource MainColor}"/>
-            <Label Text="{Binding Idiom}"
                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding DeviceType}"
                    TextColor="{DynamicResource MainColor}"/>
