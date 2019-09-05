@@ -23,5 +23,6 @@
     <Folder Include="Styles\" />
     <Folder Include="Services\DataBreach\" />
     <Folder Include="Models\DataBreach\" />
+    <Folder Include="Services\DeviceInfo\" />
   </ItemGroup>
 </Project>
