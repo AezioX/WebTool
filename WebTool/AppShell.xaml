@@ -56,6 +56,13 @@
             </ShellContent>
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Domain Database" Icon="Green/tiger.png">
+        <Tab Route="domaindatabase">
+            <ShellContent>
+                <pages:DomainDatabasePage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Device Info" Icon="Green/tiger.png">
         <Tab Route="deviceinfo">
             <ShellContent>
