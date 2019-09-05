@@ -56,7 +56,13 @@
             </ShellContent>
         </Tab>
     </FlyoutItem>
-
+    <FlyoutItem Title="Device Info" Icon="Green/tiger.png">
+        <Tab Route="deviceinfo">
+            <ShellContent>
+                <pages:DeviceInfoPage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Settings" Icon="Green/tiger.png">
         <Tab Route="settings">
             <ShellContent>
