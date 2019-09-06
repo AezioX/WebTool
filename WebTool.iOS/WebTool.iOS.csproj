@@ -143,5 +143,10 @@
     <BundleResource Include="Resources\Green\horse.png" />
     <BundleResource Include="Resources\Green\ox.png" />
     <BundleResource Include="Resources\Green\snake.png" />
+    <BundleResource Include="Resources\Red\settings.png" />
+    <BundleResource Include="Resources\Red\dog.png" />
+    <BundleResource Include="Resources\Red\horse.png" />
+    <BundleResource Include="Resources\Red\ox.png" />
+    <BundleResource Include="Resources\Red\snake.png" />
   </ItemGroup>
 </Project>
