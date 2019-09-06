@@ -2,7 +2,6 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebTool.AppShell"
-             xmlns:styles="clr-namespace:WebTool.Styles"
              xmlns:pages="clr-namespace:WebTool.Views"
              BackgroundColor="{DynamicResource DarkColor}"
              FlyoutBackgroundColor="{DynamicResource DarkColor}"
@@ -10,17 +9,17 @@
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid BackgroundColor="Red" HeightRequest="100">
-        <Image Aspect="AspectFill"
-               Source="{DynamicResource FlyoutHeaderImage}"
-               Opacity="1"/>
-        <Label Text=""
-               FontSize="Title"
-               TextColor="{DynamicResource MainColor}"
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"/>
-    </Grid>
+            <Grid BackgroundColor="{DynamicResource DarkColor}" HeightRequest="100">
+                <Image Aspect="AspectFill"
+                  Source="{DynamicResource FlyoutHeaderImage}"
+                  Opacity="1"/>
+                <Label Text=""
+                  FontSize="Title"
+                  TextColor="{DynamicResource MainColor}"
+                  FontAttributes="Bold"
+                  HorizontalTextAlignment="Center"
+                  VerticalTextAlignment="Center"/>
+            </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
