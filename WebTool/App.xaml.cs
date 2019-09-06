@@ -59,16 +59,16 @@ namespace WebTool
         public static void ChangeThemeToAezioxChoice()
         {
             App.Current.Resources["MainColor"] = "#ff0000";
-            App.Current.Resources["FlyoutHeaderImage"] = "red/Nebula-Red.jpg";
-            App.Current.Resources["Tiger"] = "red/tiger.png";
+            App.Current.Resources["FlyoutHeaderImage"] = "Red/Nebula-Red.jpg";
+            App.Current.Resources["Tiger"] = "Red/tiger.png";
             Preferences.Set("CurrentTheme", "AezioX's Choice");
         }
 
         public static void ChangeThemeToDefaultTheme()
         {
             App.Current.Resources["MainColor"] = "#0dff00";
-            App.Current.Resources["FlyoutHeaderImage"] = "green/Nebula-Green.jpg";
-            App.Current.Resources["Tiger"] = "green/tiger.png";
+            App.Current.Resources["FlyoutHeaderImage"] = "Green/Nebula-Green.jpg";
+            App.Current.Resources["Tiger"] = "Green/tiger.png";
             Preferences.Set("CurrentTheme", "Default Theme");
         }
     }

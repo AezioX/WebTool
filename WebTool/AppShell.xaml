@@ -14,7 +14,8 @@
         <Image Aspect="AspectFill"
                Source="{DynamicResource FlyoutHeaderImage}"
                Opacity="1"/>
-        <Label Text="Test"
+        <Label Text=""
+               FontSize="Title"
                TextColor="{DynamicResource MainColor}"
                FontAttributes="Bold"
                HorizontalTextAlignment="Center"
