@@ -60,7 +60,13 @@ namespace WebTool
         {
             App.Current.Resources["MainColor"] = "#ff0000";
             App.Current.Resources["FlyoutHeaderImage"] = "Red/Nebula-Red.jpg";
-            App.Current.Resources["Tiger"] = "Red/tiger.png";
+
+            App.Current.Resources["TigerIcon"] = "Red/tiger.png";
+            App.Current.Resources["HorseIcon"] = "Red/horse.png";
+            App.Current.Resources["OxIcon"] = "Red/ox.png";
+            App.Current.Resources["DogIcon"] = "Red/dog.png";
+            App.Current.Resources["SettingsIcon"] = "Red/settings.png";
+
             Preferences.Set("CurrentTheme", "AezioX's Choice");
         }
 
@@ -74,7 +80,6 @@ namespace WebTool
             App.Current.Resources["OxIcon"] = "Green/ox.png";
             App.Current.Resources["DogIcon"] = "Green/dog.png";
             App.Current.Resources["SettingsIcon"] = "Green/settings.png";
-
 
             Preferences.Set("CurrentTheme", "Default Theme");
         }
