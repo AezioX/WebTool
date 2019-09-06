@@ -61,28 +61,28 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
 
-    <FlyoutItem Title="Data Breach Checker" Icon="Green/tiger.png">
-        <Tab Route="databreachchecker">
-            <ShellContent>
-                <pages:DataBreachPage/>
-            </ShellContent>
-        </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Domain Database" Icon="Green/tiger.png">
+    <FlyoutItem Title="Domain Database" Icon="{DynamicResource HorseIcon}">
         <Tab Route="domaindatabase">
             <ShellContent>
                 <pages:DomainDatabasePage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Device Info" Icon="Green/tiger.png">
+    <FlyoutItem Title="Data Breach Checker" Icon="{DynamicResource OxIcon}">
+        <Tab Route="databreachchecker">
+            <ShellContent>
+                <pages:DataBreachPage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Device Info" Icon="{DynamicResource SnakeIcon}">
         <Tab Route="deviceinfo">
             <ShellContent>
                 <pages:DeviceInfoPage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Settings" Icon="Green/tiger.png">
+    <FlyoutItem Title="Settings" Icon="{DynamicResource SettingsIcon}">
         <Tab Route="settings">
             <ShellContent>
                 <pages:SettingsPage/>
