@@ -6,11 +6,23 @@
              xmlns:pages="clr-namespace:WebTool.Views"
              BackgroundColor="{DynamicResource DarkColor}"
              FlyoutBackgroundColor="{DynamicResource DarkColor}"
-             ForegroundColor="{DynamicResource MainColor}"
-             FlyoutHeaderBehavior="CollapseOnScroll">
-    <Shell.FlyoutHeader>
-        <styles:FlyoutHeader/>
-    </Shell.FlyoutHeader>
+             ForegroundColor="{DynamicResource MainColor}">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Red" HeightRequest="100">
+        <Image Aspect="AspectFill"
+               Source="{DynamicResource FlyoutHeaderImage}"
+               Opacity="1"/>
+        <Label Text="Test"
+               TextColor="{DynamicResource MainColor}"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
 
     <Shell.ItemTemplate>
         <DataTemplate>
