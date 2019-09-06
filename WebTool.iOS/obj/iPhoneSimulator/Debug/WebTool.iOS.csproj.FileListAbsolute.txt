@@ -66,3 +66,9 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/horse.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/ox.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/snake.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/settings.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/dog.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/horse.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/ox.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/snake.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/dog.png

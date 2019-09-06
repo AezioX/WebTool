@@ -75,7 +75,7 @@
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Device Info" Icon="{DynamicResource SnakeIcon}">
+    <FlyoutItem Title="Device Info" Icon="{DynamicResource DogIcon}">
         <Tab Route="deviceinfo">
             <ShellContent>
                 <pages:DeviceInfoPage/>

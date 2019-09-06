@@ -72,7 +72,7 @@ namespace WebTool
             App.Current.Resources["TigerIcon"] = "Green/tiger.png";
             App.Current.Resources["HorseIcon"] = "Green/horse.png";
             App.Current.Resources["OxIcon"] = "Green/ox.png";
-            App.Current.Resources["SnakeIcon"] = "Green/snake.png";
+            App.Current.Resources["DogIcon"] = "Green/dog.png";
             App.Current.Resources["SettingsIcon"] = "Green/settings.png";
 
 
