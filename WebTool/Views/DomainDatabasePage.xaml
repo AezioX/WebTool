@@ -24,7 +24,8 @@
                 </Grid>
                 <ListView BackgroundColor="{DynamicResource DarkColor}"
                           ItemsSource="{Binding DomainSearchResults}"
-                          HasUnevenRows="True">
+                          HasUnevenRows="True"
+                          SeparatorVisibility="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -33,14 +34,6 @@
                                        Text="{Binding Domain}"
                                        FontAttributes="Bold"
                                        FontSize="Large"/>
-                                    <Label Grid.Column="0"
-                                               TextColor="{DynamicResource MainColor}"
-                                               Text="{Binding Create_date, StringFormat='Creation date: {0:MMMM d, yyyy h:mm tt}'}"
-                                               FontSize="Medium"/>
-                                    <Label Grid.Column="1"
-                                               TextColor="{DynamicResource MainColor}"
-                                               Text="{Binding Expiry_date, StringFormat='Expiration date: {0:MMMM d, yyyy h:mm tt}'}"
-                                               FontSize="Medium"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
