@@ -148,5 +148,6 @@
     <BundleResource Include="Resources\Red\horse.png" />
     <BundleResource Include="Resources\Red\ox.png" />
     <BundleResource Include="Resources\Red\snake.png" />
+    <BundleResource Include="Resources\Green\dog.png" />
   </ItemGroup>
 </Project>
