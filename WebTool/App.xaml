@@ -7,7 +7,5 @@
              x:Class="WebTool.App">
     <Application.Resources>
         <ResourceDictionary Source="/Styles/Global.xaml"/>
-        <ResourceDictionary Source="/Styles/DataBreachResultTemplate.xaml"/>
-        <ResourceDictionary Source="/Styles/DataBreachDataTypeTemplate.xaml"/>
     </Application.Resources>
 </Application>

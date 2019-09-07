@@ -24,4 +24,113 @@
     <FlyoutItem x:Key="DogIcon" Icon="Green/dog.png"/>
     <FlyoutItem x:Key="SettingsIcon" Icon="Green/settings.png"/>
 
+
+
+
+    <!-- DataTemplates -->
+    <DataTemplate x:Key="dataBreachResultTemplate">
+        <ViewCell>
+            <StackLayout Margin="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                            Source="{Binding LogoPath}"
+                            Aspect="AspectFit"/>
+                    <StackLayout Grid.Column="1">
+                        <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding Name, StringFormat='Name: {0}'}"
+                            FontSize="Medium"/>
+                        <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding Title, StringFormat='Title: {0}'}"
+                            FontSize="Medium"/>
+                        <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding Domain, StringFormat='Domain: {0}'}"
+                            FontSize="Medium"/>
+                    </StackLayout>
+                </Grid>
+                <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding PwnCount, StringFormat='Compromised accounts: {0}'}"
+                            FontSize="Small"/>
+                <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding BreachDate, StringFormat='Breach Date: {0:MMMM d, yyyy h:mm tt}'}"
+                            FontSize="Small"/>
+                <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding AddedDate, StringFormat='Added Date: {0:MMMM d, yyyy h:mm tt}'}"
+                            FontSize="Small"/>
+                <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding ModifiedDate, StringFormat='Modified Date: {0:MMMM d, yyyy h:mm tt}'}"
+                            FontSize="Small"/>
+                <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding Description, StringFormat='Description: {0}'}"
+                            FontSize="Small"/>
+                <BoxView HeightRequest="10"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0"
+                            TextColor="{DynamicResource MainColor}"
+                            Text="{Binding IsVerified, StringFormat='IsVerified: {0}'}"
+                            FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="0"
+                            TextColor="{DynamicResource MainColor}"
+                            Text="{Binding IsFabricated, StringFormat='IsFabricated: {0}'}"
+                            FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="1"
+                            TextColor="{DynamicResource MainColor}"
+                            Text="{Binding IsSensitive, StringFormat='IsSensitive: {0}'}"
+                            FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="0" TextColor="{DynamicResource MainColor}"
+                            Text="{Binding IsRetired, StringFormat='IsRetired: {0}'}"
+                            FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="1"
+                            TextColor="{DynamicResource MainColor}"
+                            Text="{Binding IsSpamList, StringFormat='IsSpamList: {0}'}"
+                            FontSize="Small"/>
+                </Grid>
+                <BoxView HeightRequest="5"/>
+                <ListView ItemsSource="{Binding DataClasses}"
+                          ItemTemplate="{DynamicResource dataBreachDataTypeTemplate}"
+                          BackgroundColor="{DynamicResource DarkColor}"
+                          HasUnevenRows="False"
+                          SeparatorVisibility="None"
+                          VerticalOptions="Start"
+                          SelectionMode="None"
+                          RowHeight="15"
+                          HeightRequest="90">
+                    <ListView.Header>
+                        <Label Text="Type of compromised data:"
+                               FontSize="Small"
+                               TextColor="{DynamicResource MainColor}"/>
+                    </ListView.Header>
+                </ListView>
+                <BoxView HeightRequest="10"/>
+            </StackLayout>
+        </ViewCell>
+    </DataTemplate>
+
+
+
+
+    <DataTemplate x:Key="dataBreachDataTypeTemplate">
+        <ViewCell>
+            <StackLayout>
+                <Label TextColor="{DynamicResource MainColor}"
+                            Text="{Binding Name}"
+                            FontSize="Small"/>
+            </StackLayout>
+        </ViewCell>
+    </DataTemplate>
+
+
+
+
 </ResourceDictionary>

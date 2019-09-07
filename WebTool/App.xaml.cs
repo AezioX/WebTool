@@ -60,9 +60,13 @@ namespace WebTool
         {
             App.Current.Resources["MainColor"] = "#ff0000";
             App.Current.Resources["FlyoutHeaderImage"] = "Red/Nebula-Red.jpg";
-
             App.Current.Resources["TigerIcon"] = "Red/tiger.png";
+
+
+            App.Current.Resources["HorseIcon"] = null;
             App.Current.Resources["HorseIcon"] = "Red/horse.png";
+
+
             App.Current.Resources["OxIcon"] = "Red/ox.png";
             App.Current.Resources["DogIcon"] = "Red/dog.png";
             App.Current.Resources["SettingsIcon"] = "Red/settings.png";
@@ -74,9 +78,14 @@ namespace WebTool
         {
             App.Current.Resources["MainColor"] = "#0dff00";
             App.Current.Resources["FlyoutHeaderImage"] = "Green/Nebula-Green.jpg";
-
             App.Current.Resources["TigerIcon"] = "Green/tiger.png";
+
+
+            App.Current.Resources["HorseIcon"] = null;
             App.Current.Resources["HorseIcon"] = "Green/horse.png";
+
+
+
             App.Current.Resources["OxIcon"] = "Green/ox.png";
             App.Current.Resources["DogIcon"] = "Green/dog.png";
             App.Current.Resources["SettingsIcon"] = "Green/settings.png";

@@ -54,13 +54,6 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/coremlc/_PartialAppManifest.items
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/coremlc/_BundleResourceWithLogicalName.items
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/tiger.png
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csprojAssemblyReference.cache
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CoreCompileInputs.cache
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CopyComplete
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.exe
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.pdb
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/tiger.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/settings.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/horse.png
@@ -72,3 +65,10 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/ox.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Red/snake.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/Green/dog.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.4/optimized/
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csprojAssemblyReference.cache
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CoreCompileInputs.cache
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CopyComplete
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.exe
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.pdb
