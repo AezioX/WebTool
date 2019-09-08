@@ -131,23 +131,22 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Green\" />
     <Folder Include="Resources\Red\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Green\NebulaGreen.jpg" />
-    <BundleResource Include="Resources\Green\tiger.png" />
     <BundleResource Include="Resources\Red\NebulaRed.jpg" />
     <BundleResource Include="Resources\Red\tiger.png" />
-    <BundleResource Include="Resources\Green\settings.png" />
-    <BundleResource Include="Resources\Green\horse.png" />
-    <BundleResource Include="Resources\Green\ox.png" />
-    <BundleResource Include="Resources\Green\snake.png" />
     <BundleResource Include="Resources\Red\settings.png" />
     <BundleResource Include="Resources\Red\dog.png" />
     <BundleResource Include="Resources\Red\horse.png" />
     <BundleResource Include="Resources\Red\ox.png" />
     <BundleResource Include="Resources\Red\snake.png" />
-    <BundleResource Include="Resources\Green\dog.png" />
+    <BundleResource Include="Resources\doggreen.png" />
+    <BundleResource Include="Resources\horsegreen.png" />
+    <BundleResource Include="Resources\nebulagreen.jpg" />
+    <BundleResource Include="Resources\oxgreen.png" />
+    <BundleResource Include="Resources\settingsgreen.png" />
+    <BundleResource Include="Resources\snakegreen.png" />
+    <BundleResource Include="Resources\tigergreen.png" />
   </ItemGroup>
 </Project>
