@@ -59,12 +59,12 @@ namespace WebTool
         public static void ChangeThemeToAezioxChoice()
         {
             App.Current.Resources["MainColor"] = "#ff0000";
-            App.Current.Resources["FlyoutHeaderImage"] = "Red/NebulaRed.jpg";
-            App.Current.Resources["TigerIcon"] = "Red/tiger.png";
-            App.Current.Resources["HorseIcon"] = "Red/horse.png";
-            App.Current.Resources["OxIcon"] = "Red/ox.png";
-            App.Current.Resources["DogIcon"] = "Red/dog.png";
-            App.Current.Resources["SettingsIcon"] = "Red/settings.png";
+            App.Current.Resources["FlyoutHeaderImage"] = "nebulared.jpg";
+            App.Current.Resources["TigerIcon"] = "tigerred.png";
+            App.Current.Resources["HorseIcon"] = "horsered.png";
+            App.Current.Resources["OxIcon"] = "oxred.png";
+            App.Current.Resources["DogIcon"] = "dogred.png";
+            App.Current.Resources["SettingsIcon"] = "settingsred.png";
 
             Preferences.Set("CurrentTheme", "AezioX's Choice");
         }
