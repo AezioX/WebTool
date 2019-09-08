@@ -135,9 +135,9 @@
     <Folder Include="Resources\Red\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Green\Nebula-Green.jpg" />
+    <BundleResource Include="Resources\Green\NebulaGreen.jpg" />
     <BundleResource Include="Resources\Green\tiger.png" />
-    <BundleResource Include="Resources\Red\Nebula-Red.jpg" />
+    <BundleResource Include="Resources\Red\NebulaRed.jpg" />
     <BundleResource Include="Resources\Red\tiger.png" />
     <BundleResource Include="Resources\Green\settings.png" />
     <BundleResource Include="Resources\Green\horse.png" />

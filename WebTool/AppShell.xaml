@@ -6,7 +6,6 @@
              BackgroundColor="{DynamicResource DarkColor}"
              FlyoutBackgroundColor="{DynamicResource DarkColor}"
              ForegroundColor="{DynamicResource MainColor}">
-
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid BackgroundColor="{DynamicResource DarkColor}" HeightRequest="100">
@@ -89,5 +88,6 @@
             </ShellContent>
         </Tab>
     </FlyoutItem>
+
 
 </Shell>

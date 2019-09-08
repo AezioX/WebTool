@@ -16,7 +16,7 @@
         <Setter Property="BarTextColor" Value="{DynamicResource MainColor}"/>
     </Style>
 
-    <Image x:Key="FlyoutHeaderImage" Source="Green/Nebula-Green.jpg"/>
+    <Image x:Key="FlyoutHeaderImage" Source="green/nebulagreen.jpg"/>
 
     <FlyoutItem x:Key="TigerIcon" Icon="Green/tiger.png"/>
     <FlyoutItem x:Key="HorseIcon" Icon="Green/horse.png"/>
