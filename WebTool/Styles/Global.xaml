@@ -19,7 +19,7 @@
     <Image x:Key="FlyoutHeaderImage" Source="nebulagreen.jpg"/>
 
     <FlyoutItem x:Key="TigerIcon" Icon="tigergreen.png"/>
-    <FlyoutItem x:Key="HorseIcon" Icon="Green/horse.png"/>
+    <FlyoutItem x:Key="HorseIcon" Icon="horsegreen.png"/>
     <FlyoutItem x:Key="OxIcon" Icon="oxgreen.png"/>
     <FlyoutItem x:Key="DogIcon" Icon="doggreen.png"/>
     <FlyoutItem x:Key="SettingsIcon" Icon="settingsgreen.png"/>
