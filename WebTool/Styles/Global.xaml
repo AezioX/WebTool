@@ -16,13 +16,13 @@
         <Setter Property="BarTextColor" Value="{DynamicResource MainColor}"/>
     </Style>
 
-    <Image x:Key="FlyoutHeaderImage" Source="green/nebulagreen.jpg"/>
+    <Image x:Key="FlyoutHeaderImage" Source="nebulagreen.jpg"/>
 
-    <FlyoutItem x:Key="TigerIcon" Icon="Green/tiger.png"/>
+    <FlyoutItem x:Key="TigerIcon" Icon="tigergreen.png"/>
     <FlyoutItem x:Key="HorseIcon" Icon="Green/horse.png"/>
-    <FlyoutItem x:Key="OxIcon" Icon="Green/ox.png"/>
-    <FlyoutItem x:Key="DogIcon" Icon="Green/dog.png"/>
-    <FlyoutItem x:Key="SettingsIcon" Icon="Green/settings.png"/>
+    <FlyoutItem x:Key="OxIcon" Icon="oxgreen.png"/>
+    <FlyoutItem x:Key="DogIcon" Icon="doggreen.png"/>
+    <FlyoutItem x:Key="SettingsIcon" Icon="settingsgreen.png"/>
 
 
 
@@ -117,9 +117,6 @@
         </ViewCell>
     </DataTemplate>
 
-
-
-
     <DataTemplate x:Key="dataBreachDataTypeTemplate">
         <ViewCell>
             <StackLayout>
@@ -129,8 +126,5 @@
             </StackLayout>
         </ViewCell>
     </DataTemplate>
-
-
-
 
 </ResourceDictionary>
