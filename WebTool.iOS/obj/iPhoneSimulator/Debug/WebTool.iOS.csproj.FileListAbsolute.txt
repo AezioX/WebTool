@@ -59,12 +59,6 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/actool/_BundleResourceWithLogicalName.items
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/coremlc/_PartialAppManifest.items
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/coremlc/_BundleResourceWithLogicalName.items
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/Red/tiger.png
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/Red/settings.png
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/Red/dog.png
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/Red/horse.png
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/Red/ox.png
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/Red/snake.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/doggreen.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/horsegreen.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/oxgreen.png
@@ -72,3 +66,9 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/snakegreen.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/tigergreen.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/dogred.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/horsered.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/oxred.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/settingsred.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/snakered.png
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/tigerred.png

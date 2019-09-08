@@ -131,16 +131,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Red\" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Red\NebulaRed.jpg" />
-    <BundleResource Include="Resources\Red\tiger.png" />
-    <BundleResource Include="Resources\Red\settings.png" />
-    <BundleResource Include="Resources\Red\dog.png" />
-    <BundleResource Include="Resources\Red\horse.png" />
-    <BundleResource Include="Resources\Red\ox.png" />
-    <BundleResource Include="Resources\Red\snake.png" />
     <BundleResource Include="Resources\doggreen.png" />
     <BundleResource Include="Resources\horsegreen.png" />
     <BundleResource Include="Resources\nebulagreen.jpg" />
@@ -148,5 +138,12 @@
     <BundleResource Include="Resources\settingsgreen.png" />
     <BundleResource Include="Resources\snakegreen.png" />
     <BundleResource Include="Resources\tigergreen.png" />
+    <BundleResource Include="Resources\dogred.png" />
+    <BundleResource Include="Resources\horsered.png" />
+    <BundleResource Include="Resources\nebulared.jpg" />
+    <BundleResource Include="Resources\oxred.png" />
+    <BundleResource Include="Resources\settingsred.png" />
+    <BundleResource Include="Resources\snakered.png" />
+    <BundleResource Include="Resources\tigerred.png" />
   </ItemGroup>
 </Project>
