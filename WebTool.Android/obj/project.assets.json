@@ -858,6 +858,22 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.2.0.709249": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Design": "28.0.0.1",
+          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.1"
+        },
+        "compile": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets": {}
+        }
+      },
       "WebTool/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2048,6 +2064,27 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Visual.Material/4.2.0.709249": {
+      "sha512": "Vde5rx9LSojqP7rYBoFCfUsKRt+ZT8tfgUkeFEsmiv8Q+13hQz8NiLNHP7+9wJ6dGiNvY3aqwyFist1pjdA+kQ==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/4.2.0.709249",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll.mdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "lib/tizen40/Xamarin.Forms.Material.dll",
+        "lib/tizen40/Xamarin.Forms.Material.pdb",
+        "xamarin.forms.visual.material.4.2.0.709249.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
+      ]
+    },
     "WebTool/1.0.0": {
       "type": "project",
       "path": "../WebTool/WebTool.csproj",
@@ -2065,7 +2102,8 @@
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
       "Xamarin.Essentials >= 1.1.0",
-      "Xamarin.Forms >= 4.1.0.555618"
+      "Xamarin.Forms >= 4.1.0.555618",
+      "Xamarin.Forms.Visual.Material >= 4.2.0.709249"
     ]
   },
   "packageFolders": {
@@ -2138,6 +2176,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.1.0.555618, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
+            "target": "Package",
+            "version": "[4.2.0.709249, )"
           }
         }
       }

@@ -5,7 +5,8 @@
              xmlns:pages="clr-namespace:WebTool.Views"
              BackgroundColor="{DynamicResource DarkColor}"
              FlyoutBackgroundColor="{DynamicResource DarkColor}"
-             ForegroundColor="{DynamicResource MainColor}">
+             ForegroundColor="{DynamicResource MainColor}"
+             Visual="Material">
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid BackgroundColor="{DynamicResource DarkColor}" HeightRequest="100">
