@@ -61,6 +61,13 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
 
+    <FlyoutItem Title="Server Monitor" Icon="{DynamicResource TigerIcon}">
+        <Tab Route="servermonitor">
+            <ShellContent>
+                <pages:ServerMonitorPage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Domain Database" Icon="{DynamicResource HorseIcon}">
         <Tab Route="domaindatabase">
             <ShellContent>
