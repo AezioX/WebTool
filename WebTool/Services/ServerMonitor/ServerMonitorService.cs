@@ -8,11 +8,11 @@ namespace WebTool.Services.ServerMonitor
 {
     public class ServerMonitorService : IServerMonitorService
     {
-        private ServerChecker _serverChecker;
+        private IServerChecker _serverChecker;
 
-        public ServerMonitorService()
+        public ServerMonitorService(IServerChecker serverChecker)
         {
-            _serverChecker = new ServerChecker();
+            _serverChecker = serverChecker;
 
             #region Add Servers Region
             _servers.Add(new Server
