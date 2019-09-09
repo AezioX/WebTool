@@ -5,6 +5,13 @@
              BackgroundColor="{DynamicResource DarkColor}"
              Title="Device Info"
              Shell.TitleColor="{DynamicResource MainColor}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Get"
+                     IconImageSource="{DynamicResource SnakeIcon}"
+                     Command="{Binding GetCommand}"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Get" Command="{Binding GetCommand}"

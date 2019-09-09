@@ -64,6 +64,7 @@ namespace WebTool
             App.Current.Resources["HorseIcon"] = "horsered.png";
             App.Current.Resources["OxIcon"] = "oxred.png";
             App.Current.Resources["DogIcon"] = "dogred.png";
+            App.Current.Resources["SnakeIcon"] = "snakered.png";
             App.Current.Resources["SettingsIcon"] = "settingsred.png";
 
             Preferences.Set("CurrentTheme", "AezioX's Choice");
@@ -77,6 +78,7 @@ namespace WebTool
             App.Current.Resources["HorseIcon"] = "horsegreen.png";
             App.Current.Resources["OxIcon"] = "oxgreen.png";
             App.Current.Resources["DogIcon"] = "doggreen.png";
+            App.Current.Resources["SnakeIcon"] = "snakegreen.png";
             App.Current.Resources["SettingsIcon"] = "settingsgreen.png";
 
             Preferences.Set("CurrentTheme", "Default Theme");

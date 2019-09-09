@@ -22,6 +22,7 @@
     <FlyoutItem x:Key="HorseIcon" Icon="horsegreen.png"/>
     <FlyoutItem x:Key="OxIcon" Icon="oxgreen.png"/>
     <FlyoutItem x:Key="DogIcon" Icon="doggreen.png"/>
+    <FlyoutItem x:Key="SnakeIcon" Icon="snakegreen.png"/>
     <FlyoutItem x:Key="SettingsIcon" Icon="settingsgreen.png"/>
 
 
