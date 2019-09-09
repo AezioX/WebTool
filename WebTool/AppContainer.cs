@@ -5,6 +5,7 @@ using WebTool.ViewModels;
 using WebTool.Services.DataBreach;
 using WebTool.Services.DeviceInfo;
 using WebTool.Services.DomainDatabase;
+using WebTool.Services.ServerMonitor;
 
 namespace WebTool
 {
@@ -30,7 +31,7 @@ namespace WebTool
             builder.RegisterType<DataBreachService>().As<IDataBreachService>();
             builder.RegisterType<DeviceInfoService>().As<IDeviceInfoService>();
             builder.RegisterType<DomainDatabaseService>().As<IDomainDatabaseService>();
-
+            builder.RegisterType<ServerMonitorService>().As<IServerMonitorService>();
 
             _container = builder.Build();
         }

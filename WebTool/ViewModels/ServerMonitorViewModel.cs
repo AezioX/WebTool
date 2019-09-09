@@ -3,15 +3,19 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
+using WebTool.Services.ServerMonitor;
 
 namespace WebTool.ViewModels
 {
     public class ServerMonitorViewModel : BaseViewModel
     {
+        private ServerMonitorService _serverMonitorService;
+
         public ICommand RefreshCommand => new Command(Refresh);
 
         public ServerMonitorViewModel()
         {
+            _serverMonitorService = new ServerMonitorService();
         }
 
         private async void Refresh()
@@ -20,7 +24,7 @@ namespace WebTool.ViewModels
 
             try
             {
-                ServersData = await _monitor.GetUpdatedServersData();
+                ServersData = await _serverMonitorService.GetUpdatedServersData();
             }
             catch (Exception ex)
             {
