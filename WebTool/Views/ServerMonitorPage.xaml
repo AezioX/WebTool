@@ -1,10 +1,58 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebTool.Views.ServerMonitorPage">
+             x:Class="WebTool.Views.ServerMonitorPage"
+             xmlns:local="clr-namespace:WebTool.ViewModels"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Shell.TitleColor="{DynamicResource MainColor}"
+             Title="Server Monitor">
     <ContentPage.Content>
         <StackLayout>
-
+            <Button Text="Refresh"
+                    Command="{Binding RefreshCommand}"
+                    FontSize="Medium"
+                    TextColor="{DynamicResource MainColor}"/>
+            <Label Text="{Binding LastUpdated}"
+                   FontSize="Small"
+                   TextColor="{DynamicResource MainColor}"
+                   BackgroundColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"/>
+            <ListView SeparatorVisibility="None"
+                      BackgroundColor="{DynamicResource DarkColor}"
+                      RefreshControlColor="{DynamicResource MainColor}"
+                      ItemsSource="{Binding ServersData}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0"
+                                       TextColor="{DynamicResource MainColor}"
+                                       Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"/>
+                                <Label Grid.Column="1"
+                                       TextColor="{DynamicResource MainColor}"
+                                       Text="{Binding DisplayHost}"
+                                       HorizontalOptions="Start"
+                                       BackgroundColor="White"
+                                       FontSize="Small"/>
+                                <Label Grid.Column="2"
+                                       TextColor="{DynamicResource MainColor}"
+                                       Text="{Binding Status}"
+                                       FontSize="Small"
+                                       BackgroundColor="White"
+                                       HorizontalOptions="End"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
