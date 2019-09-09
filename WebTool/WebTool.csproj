@@ -27,5 +27,6 @@
     <Folder Include="Models\DomainDatabase\" />
     <Folder Include="Services\DomainDatabase\" />
     <Folder Include="Models\ServerMonitor\" />
+    <Folder Include="Services\ServerMonitor\" />
   </ItemGroup>
 </Project>

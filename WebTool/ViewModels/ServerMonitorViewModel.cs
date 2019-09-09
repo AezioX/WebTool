@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using WebTool.Models.ServerMonitor;
 
 namespace WebTool.ViewModels
 {
