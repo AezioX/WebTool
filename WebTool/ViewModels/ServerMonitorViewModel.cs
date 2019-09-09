@@ -9,13 +9,13 @@ namespace WebTool.ViewModels
 {
     public class ServerMonitorViewModel : BaseViewModel
     {
-        private ServerMonitorService _serverMonitorService;
+        private IServerMonitorService _serverMonitorService;
 
         public ICommand RefreshCommand => new Command(Refresh);
 
-        public ServerMonitorViewModel()
+        public ServerMonitorViewModel(IServerMonitorService serverMonitorService)
         {
-            _serverMonitorService = new ServerMonitorService();
+            _serverMonitorService = serverMonitorService;
         }
 
         private async void Refresh()
