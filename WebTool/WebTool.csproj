@@ -26,5 +26,6 @@
     <Folder Include="Services\DeviceInfo\" />
     <Folder Include="Models\DomainDatabase\" />
     <Folder Include="Services\DomainDatabase\" />
+    <Folder Include="Models\ServerMonitor\" />
   </ItemGroup>
 </Project>
