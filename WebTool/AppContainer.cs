@@ -34,6 +34,7 @@ namespace WebTool
             builder.RegisterType<DeviceInfoService>().As<IDeviceInfoService>();
             builder.RegisterType<DomainDatabaseService>().As<IDomainDatabaseService>();
             builder.RegisterType<ServerMonitorService>().As<IServerMonitorService>();
+            builder.RegisterType<ServerChecker>().As<IServerChecker>();
 
             _container = builder.Build();
         }
