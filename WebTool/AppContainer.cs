@@ -21,11 +21,13 @@ namespace WebTool
             builder.RegisterType<DataBreachPage>().SingleInstance();
             builder.RegisterType<DeviceInfoPage>().SingleInstance();
             builder.RegisterType<DomainDatabasePage>().SingleInstance();
+            builder.RegisterType<ServerMonitorPage>().SingleInstance();
 
             //ViewModels
             builder.RegisterType<DataBreachViewModel>().SingleInstance();
             builder.RegisterType<DeviceInfoViewModel>().SingleInstance();
             builder.RegisterType<DomainDatabaseViewModel>().SingleInstance();
+            builder.RegisterType<ServerMonitorViewModel>().SingleInstance();
 
             //Services
             builder.RegisterType<DataBreachService>().As<IDataBreachService>();
