@@ -7,6 +7,7 @@
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/DataBreachPage.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/DeviceInfoPage.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/DomainDatabasePage.xaml.g.cs
+/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/ServerMonitorPage.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/SettingsPage.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.csproj.CoreCompileInputs.cache
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.AssemblyInfoInputs.cache
@@ -14,5 +15,3 @@
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.dll
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.pdb
-/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.csprojAssemblyReference.cache
-/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/ServerMonitorPage.xaml.g.cs

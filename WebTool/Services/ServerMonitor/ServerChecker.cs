@@ -33,7 +33,6 @@ namespace WebTool.Services.ServerMonitor
                             output.Add(new Server
                             {
                                 Name = $"{server.Name}",
-                                IP = $"{server.IP}",
                                 HostName = $"{server.HostName}",
                                 DisplayHost = $"{server.DisplayHost}",
                                 Status = $"{serverStatus}"
@@ -45,7 +44,6 @@ namespace WebTool.Services.ServerMonitor
                         output.Add(new Server
                         {
                             Name = $"{server.Name}",
-                            IP = $"{server.IP}",
                             HostName = $"{server.HostName}",
                             DisplayHost = $"{ex.Message}",
                             Status = $""

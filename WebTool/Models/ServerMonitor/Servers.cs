@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.ObjectModel;
 
 namespace WebTool.Models.ServerMonitor
 {
     public class Servers
     {
-        public List<Server> MonitoredServers { get; set; } = new List<Server>();
+        public ObservableCollection<Server> MonitoredServers { get; set; } = new ObservableCollection<Server>();
     }
 }
