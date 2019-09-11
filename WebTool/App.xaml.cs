@@ -104,7 +104,6 @@ namespace WebTool
                     Name = "Google",
                     Status = "",
                     HostName = "https://google.com",
-                    DisplayHost = "https://google.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
@@ -113,7 +112,6 @@ namespace WebTool
                     Name = "Microsoft",
                     Status = "",
                     HostName = "https://microsoft.com",
-                    DisplayHost = "https://microsoft.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
@@ -122,7 +120,6 @@ namespace WebTool
                     Name = "Twitter",
                     Status = "",
                     HostName = "https://twitter.com",
-                    DisplayHost = "https://twitter.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
@@ -132,7 +129,6 @@ namespace WebTool
                     Name = "Amazon",
                     Status = "",
                     HostName = "https://amazon.com",
-                    DisplayHost = "https://amazon.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
@@ -141,7 +137,6 @@ namespace WebTool
                     Name = "YouTube",
                     Status = "",
                     HostName = "https://youtube.com",
-                    DisplayHost = "https://youtube.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
@@ -150,7 +145,6 @@ namespace WebTool
                     Name = "Apple",
                     Status = "",
                     HostName = "https://apple.com",
-                    DisplayHost = "https://apple.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
@@ -159,7 +153,6 @@ namespace WebTool
                     Name = "Reddit",
                     Status = "",
                     HostName = "https://reddit.com",
-                    DisplayHost = "https://reddit.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 

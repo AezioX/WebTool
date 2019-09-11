@@ -38,7 +38,7 @@
                                        FontSize="Medium"/>
                                 <Label Grid.Column="1"
                                        TextColor="{DynamicResource MainColor}"
-                                       Text="{Binding DisplayHost}"
+                                       Text="{Binding HostName}"
                                        HorizontalOptions="Start"
                                        BackgroundColor="White"
                                        FontSize="Small"/>
