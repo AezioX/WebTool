@@ -1,10 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebTool.Views.ServerListPage">
+             x:Class="WebTool.Views.ServerListPage"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Shell.TitleColor="{DynamicResource MainColor}"
+             Title="Servers">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"
+                     Command="{Binding AddCommand}"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-
+            <ListView SeparatorVisibility="None"
+                      BackgroundColor="{DynamicResource DarkColor}"
+                      RefreshControlColor="{DynamicResource MainColor}"
+                      ItemsSource="{Binding AllServers}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0"
+                                       TextColor="{DynamicResource MainColor}"
+                                       Text="{Binding HostName}"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"/>
+                                <Button Grid.Column="1"
+                                       TextColor="{DynamicResource MainColor}"
+                                       Text="Log"
+                                       HorizontalOptions="Start"
+                                       BackgroundColor="White"
+                                       FontSize="Small"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
