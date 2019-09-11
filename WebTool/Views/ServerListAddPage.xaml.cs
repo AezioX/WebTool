@@ -11,7 +11,7 @@ namespace WebTool.Views
         {
             InitializeComponent();
 
-            BindingContext = new ServerListAddViewModel();
+            BindingContext = AppContainer.Resolve<ServerListAddPage>();
         }
     }
 }

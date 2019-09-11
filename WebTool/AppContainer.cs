@@ -25,7 +25,6 @@ namespace WebTool
             builder.RegisterType<ServerListPage>().SingleInstance();
             builder.RegisterType<ServerListAddPage>().SingleInstance();
 
-
             //ViewModels
             builder.RegisterType<DataBreachViewModel>().SingleInstance();
             builder.RegisterType<DeviceInfoViewModel>().SingleInstance();

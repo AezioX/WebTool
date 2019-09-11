@@ -4,7 +4,19 @@
              x:Class="WebTool.Views.ServerListAddPage">
     <ContentPage.Content>
         <StackLayout>
-
+            <Entry Text="{Binding Name}"
+                   TextColor="{DynamicResource MainColor}"
+                   Placeholder="Name of Server"
+                   PlaceholderColor="{DynamicResource MainColor}"
+                   MaxLength="50"/>
+            <Entry Text="{Binding HostName}"
+                   TextColor="{DynamicResource MainColor}"
+                   Placeholder="Domain"
+                   PlaceholderColor="{DynamicResource MainColor}"
+                   MaxLength="50"/>
+            <Button Text="Add"
+                    TextColor="{DynamicResource MainColor}"
+                    Command="{Binding AddCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
