@@ -2,8 +2,8 @@
 
 namespace WebTool.Models.ServerMonitor
 {
-    public class Servers
+    public static class Servers
     {
-        public ObservableCollection<Server> MonitoredServers { get; set; } = new ObservableCollection<Server>();
+        public static ObservableCollection<Server> MonitoredServers { get; set; } = new ObservableCollection<Server>();
     }
 }

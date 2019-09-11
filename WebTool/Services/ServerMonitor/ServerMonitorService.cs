@@ -10,13 +10,11 @@ namespace WebTool.Services.ServerMonitor
     {
         private IServerChecker _serverChecker;
 
-        private Servers _servers = new Servers();
-
         public ServerMonitorService(IServerChecker serverChecker)
         {
             _serverChecker = serverChecker;
 
-            _servers.MonitoredServers.Add(new Server
+            Servers.MonitoredServers.Add(new Server
             {
                 Name = "AezioX",
                 Status = "200 (OK)",
@@ -25,7 +23,7 @@ namespace WebTool.Services.ServerMonitor
                 Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
             });
 
-            _servers.MonitoredServers.Add(new Server
+            Servers.MonitoredServers.Add(new Server
             {
                 Name = "Twitter",
                 Status = "200 (OK)",
@@ -45,7 +43,7 @@ namespace WebTool.Services.ServerMonitor
             var output = new ObservableCollection<Server>();
 
             var preprocessed = new ObservableCollection<Server>();
-            foreach(var server in _servers.MonitoredServers)
+            foreach(var server in Servers.MonitoredServers)
             {
                 preprocessed.Add(server);
             }
