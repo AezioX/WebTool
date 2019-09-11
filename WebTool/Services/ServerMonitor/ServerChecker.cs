@@ -25,7 +25,7 @@ namespace WebTool.Services.ServerMonitor
                 {
                     try
                     {
-                        using (HttpResponseMessage response = await _httpClient.GetAsync(server.DisplayHost))
+                        using (HttpResponseMessage response = await _httpClient.GetAsync(server.HostName))
                         {
                             string serverStatus = "";
                             serverStatus = Convert.ToString(response.StatusCode);
