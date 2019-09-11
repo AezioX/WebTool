@@ -92,7 +92,8 @@ namespace WebTool
         {
             try
             {
-                App.Current.Resources["ServerList"].ToString();
+                if ("" == App.Current.Resources["ServerList"].ToString())
+                    return;
             }
             catch (Exception ex)
             {
@@ -100,11 +101,20 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
-                    Name = "AezioX",
+                    Name = "Google",
                     Status = "",
-                    HostName = "https://aeziox.com",
-                    DisplayHost = "https://aeziox.com",
-                    Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
+                    HostName = "https://google.com",
+                    DisplayHost = "https://google.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "Microsoft",
+                    Status = "",
+                    HostName = "https://microsoft.com",
+                    DisplayHost = "https://microsoft.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
                 servers.MonitoredServers.Add(new Server
@@ -113,7 +123,44 @@ namespace WebTool
                     Status = "",
                     HostName = "https://twitter.com",
                     DisplayHost = "https://twitter.com",
-                    Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                });
+
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "Amazon",
+                    Status = "",
+                    HostName = "https://amazon.com",
+                    DisplayHost = "https://amazon.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "YouTube",
+                    Status = "",
+                    HostName = "https://youtube.com",
+                    DisplayHost = "https://youtube.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "Apple",
+                    Status = "",
+                    HostName = "https://apple.com",
+                    DisplayHost = "https://apple.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "Reddit",
+                    Status = "",
+                    HostName = "https://reddit.com",
+                    DisplayHost = "https://reddit.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
                 App.Current.Resources["ServerList"] = servers;
