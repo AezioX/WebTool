@@ -10,6 +10,8 @@ namespace WebTool.Services.ServerMonitor
     {
         private IServerChecker _serverChecker;
 
+        private ObservableCollection<Server> _servers = new ObservableCollection<Server>();
+
         public ServerMonitorService(IServerChecker serverChecker)
         {
             _serverChecker = serverChecker;
@@ -66,8 +68,6 @@ namespace WebTool.Services.ServerMonitor
             });
             #endregion
         }
-
-        private ObservableCollection<Server> _servers = new ObservableCollection<Server>();
 
         public void AddServer(Server server)
         {
