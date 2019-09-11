@@ -2,6 +2,8 @@
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WebTool.Models.ServerMonitor;
+using System.Collections.Generic;
 
 namespace WebTool
 {
@@ -35,6 +37,8 @@ namespace WebTool
 
         private void InitializeApp()
         {
+            CreateDefaultServerListIfEmpty();
+
             AppContainer.RegisterDependencies();
         }
 
@@ -82,6 +86,38 @@ namespace WebTool
             App.Current.Resources["SettingsIcon"] = "settingsgreen.png";
 
             Preferences.Set("CurrentTheme", "Default Theme");
+        }
+
+        private void CreateDefaultServerListIfEmpty()
+        {
+            try
+            {
+                App.Current.Resources["ServerList"].ToString();
+            }
+            catch (Exception ex)
+            {
+                var servers = Servers.getInstance();
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "AezioX",
+                    Status = "",
+                    HostName = "https://aeziox.com",
+                    DisplayHost = "https://aeziox.com",
+                    Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    Name = "Twitter",
+                    Status = "",
+                    HostName = "https://twitter.com",
+                    DisplayHost = "https://twitter.com",
+                    Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
+                });
+
+                App.Current.Resources["ServerList"] = servers;
+            }
         }
     }
 }

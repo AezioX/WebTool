@@ -10,29 +10,11 @@ namespace WebTool.Services.ServerMonitor
     {
         private IServerChecker _serverChecker;
 
-        private Servers _servers = Servers.getInstance();
+        private Servers _servers = (Servers)App.Current.Resources["ServerList"];
 
         public ServerMonitorService(IServerChecker serverChecker)
         {
             _serverChecker = serverChecker;
-
-            _servers.MonitoredServers.Add(new Server
-            {
-                Name = "AezioX",
-                Status = "200 (OK)",
-                HostName = "https://aeziox.com",
-                DisplayHost = "198.58.102.44",
-                Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
-            });
-
-            _servers.MonitoredServers.Add(new Server
-            {
-                Name = "Twitter",
-                Status = "200 (OK)",
-                HostName = "https://1.com",
-                DisplayHost = "https://twitter.com",
-                Logs = new List<string> { "200 at Aug 10", "200 at Aug 11" }
-            });
         }
 
         public void AddServer(Server server)
