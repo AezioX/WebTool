@@ -29,6 +29,7 @@ namespace WebTool.ViewModels
             try
             {
                 ServersData = await _serverMonitorService.GetUpdatedServersData();
+                IsBusy = false;
             }
             catch (Exception ex)
             {
@@ -37,8 +38,6 @@ namespace WebTool.ViewModels
             }
 
             LastUpdated = "Last updated: Aug 10, 15:15";
-
-            IsBusy = false;
         }
 
         private async void GoToAddPage()

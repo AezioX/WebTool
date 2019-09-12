@@ -29,6 +29,7 @@
                           SeparatorVisibility="None"
                           SelectionMode="None">
                 </ListView>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

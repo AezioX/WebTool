@@ -20,6 +20,10 @@ namespace WebTool.ViewModels
 
         private async void CheckAccount()
         {
+            Results = new ObservableCollection<BreachResults>();
+
+            IsBusy = true;
+
             try
             {
                 Results = await _dataBreachService.CheckAccountAsync(Account);
@@ -28,6 +32,8 @@ namespace WebTool.ViewModels
             {
                 await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
             }
+
+            IsBusy = false;
         }
 
         private ObservableCollection<BreachResults> _results;
