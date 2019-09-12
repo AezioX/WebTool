@@ -32,6 +32,7 @@
                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding DeviceType}"
                    TextColor="{DynamicResource MainColor}"/>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

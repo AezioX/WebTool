@@ -19,6 +19,8 @@ namespace WebTool.ViewModels
 
         private async void Get()
         {
+            IsBusy = true;
+
             IP = await _deviceInfoService.GetCurrentIPAsync();
             DeviceName = $"Device Name: {DeviceInfo.Name}";
             DeviceModel = $"Device Model: {DeviceInfo.Model}";
@@ -26,6 +28,8 @@ namespace WebTool.ViewModels
             Version = $"OS Version: {DeviceInfo.VersionString}";
             Platform = $"Platform: {DeviceInfo.Platform.ToString()}";
             DeviceType = $"Device Type: {DeviceInfo.DeviceType.ToString()}";
+
+            IsBusy = false;
         }
 
 
