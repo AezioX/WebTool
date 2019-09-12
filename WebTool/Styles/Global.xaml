@@ -24,6 +24,7 @@
     <FlyoutItem x:Key="DogIcon" Icon="doggreen.png"/>
     <FlyoutItem x:Key="SnakeIcon" Icon="snakegreen.png"/>
     <FlyoutItem x:Key="SettingsIcon" Icon="settingsgreen.png"/>
+    <FlyoutItem x:Key="MenuVerticalIcon" Icon="menuverticalgreen.png"/>
 
 
 
