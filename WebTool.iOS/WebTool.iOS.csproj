@@ -148,5 +148,7 @@
     <BundleResource Include="Resources\settingsred.png" />
     <BundleResource Include="Resources\snakered.png" />
     <BundleResource Include="Resources\tigerred.png" />
+    <BundleResource Include="Resources\menuverticalred.png" />
+    <BundleResource Include="Resources\menuverticalgreen.png" />
   </ItemGroup>
 </Project>
