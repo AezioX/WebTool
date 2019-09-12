@@ -20,6 +20,10 @@ namespace WebTool.ViewModels
 
         private async void Search()
         {
+            DomainSearchResults = new ObservableCollection<DomainsData>();
+
+            IsBusy = true;
+
             try
             {
                 DomainSearchResults = await _domainDatabaseService.CheckDomainsDatabase(Domain);
@@ -29,6 +33,7 @@ namespace WebTool.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
             }
 
+            IsBusy = false;
         }
 
         private string _domain;
