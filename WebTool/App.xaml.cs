@@ -1,9 +1,9 @@
 ﻿using System;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using WebTool.Models.ServerMonitor;
 using System.Collections.Generic;
+using WebTool.Views;
 
 namespace WebTool
 {
@@ -18,6 +18,8 @@ namespace WebTool
             MainPage = new AppShell();
 
             LoadSavedTheme();
+
+            RegisterShellRoutes();
         }
 
         protected override void OnStart()
@@ -40,6 +42,11 @@ namespace WebTool
             CreateDefaultServerListIfEmpty();
 
             AppContainer.RegisterDependencies();
+        }
+
+        private void RegisterShellRoutes()
+        {
+            Routing.RegisterRoute("serverlistaddpage", typeof(ServerListAddPage));
         }
 
         private void LoadSavedTheme()

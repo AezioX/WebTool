@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using WebTool.ViewModels;
+﻿using WebTool.ViewModels;
 using Xamarin.Forms;
 
 namespace WebTool.Views
@@ -11,7 +9,7 @@ namespace WebTool.Views
         {
             InitializeComponent();
 
-            BindingContext = AppContainer.Resolve<ServerListAddPage>();
+            BindingContext = AppContainer.Resolve<ServerListAddViewModel>();
         }
     }
 }

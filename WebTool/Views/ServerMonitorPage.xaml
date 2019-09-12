@@ -6,6 +6,13 @@
              BackgroundColor="{DynamicResource DarkColor}"
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Server Monitor">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"
+                     IconImageSource="{DynamicResource SnakeIcon}"
+                     Command="{Binding GoToAddPageCommand}"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Refresh"

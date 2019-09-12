@@ -23,7 +23,6 @@
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-
     <Shell.ItemTemplate>
         <DataTemplate>
             <Grid>
@@ -96,6 +95,5 @@
             </ShellContent>
         </Tab>
     </FlyoutItem>
-
 
 </Shell>

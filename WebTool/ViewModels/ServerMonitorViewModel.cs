@@ -4,6 +4,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
 using WebTool.Services.ServerMonitor;
+using WebTool.Views;
 
 namespace WebTool.ViewModels
 {
@@ -12,6 +13,8 @@ namespace WebTool.ViewModels
         private IServerMonitorService _serverMonitorService;
 
         public ICommand RefreshCommand => new Command(Refresh);
+
+        public ICommand GoToAddPageCommand => new Command(GoToAddPage);
 
         public ServerMonitorViewModel(IServerMonitorService serverMonitorService)
         {
@@ -35,6 +38,11 @@ namespace WebTool.ViewModels
             LastUpdated = "Last updated: Aug 10, 15:15";
 
             IsBusy = false;
+        }
+
+        private async void GoToAddPage()
+        {
+            await Shell.Current.GoToAsync("serverlistaddpage");
         }
 
         private ObservableCollection<Server> _serversData;
