@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebTool.Views.DomainDatabasePage"
              BackgroundColor="{DynamicResource DarkColor}"
-             Title="Domains Database"
+             Title="Domain Database"
              Shell.TitleColor="{DynamicResource MainColor}">
     <ContentPage.Content>
         <StackLayout>

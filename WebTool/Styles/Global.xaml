@@ -56,6 +56,7 @@
                             FontSize="Medium"/>
                     </StackLayout>
                 </Grid>
+                <BoxView HeightRequest="10"/>
                 <Label TextColor="{DynamicResource MainColor}"
                             Text="{Binding PwnCount, StringFormat='Compromised accounts: {0}'}"
                             FontSize="Small"/>
