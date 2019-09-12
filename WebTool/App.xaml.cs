@@ -95,7 +95,7 @@ namespace WebTool
                 if ("" == App.Current.Resources["ServerList"].ToString())
                     return;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 var servers = Servers.getInstance();
 

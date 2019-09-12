@@ -70,7 +70,7 @@ namespace WebTool.Services.ServerMonitor
                             output = true;
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     output = false;
                 }

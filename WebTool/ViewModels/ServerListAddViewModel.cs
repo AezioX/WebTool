@@ -2,6 +2,7 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Services.ServerMonitor;
+using WebTool.Models.ServerMonitor;
 
 namespace WebTool.ViewModels
 {
@@ -16,9 +17,26 @@ namespace WebTool.ViewModels
             _serverChecker = serverChecker;
         }
 
-        private void Add()
+        private async void Add()
         {
-            
+            var isDomainValid = await _serverChecker.CheckIfDomainIsValid(HostName);
+
+            if(isDomainValid == true)
+            {
+                var newServersList = (Servers)App.Current.Resources["ServerList"];
+
+                newServersList.MonitoredServers.Add(new Server
+                {
+                    Name = Name,
+                    HostName = HostName
+                });
+
+                App.Current.Resources["ServerList"] = newServersList;
+            }
+            else
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"Use a valid domain.", "OK");
+            }
         }
 
         private string _name;
