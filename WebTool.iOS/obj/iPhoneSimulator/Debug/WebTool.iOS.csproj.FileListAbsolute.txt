@@ -51,6 +51,12 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/MaterialComponents.dll
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/WebTool.dll
 /Users/aeziox/Projects/WebTool/WebTool.iOS/bin/iPhoneSimulator/Debug/WebTool.pdb
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csprojAssemblyReference.cache
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CoreCompileInputs.cache
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CopyComplete
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.exe
+/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.pdb
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/ibtool/_BundleResourceWithLogicalName.items
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/actool/_PartialAppManifest.items
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/actool/_BundleResourceWithLogicalName.items
@@ -69,9 +75,3 @@
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/snakered.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/tigerred.png
 /Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.6-12.4/optimized/
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csprojAssemblyReference.cache
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CoreCompileInputs.cache
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.csproj.CopyComplete
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.exe
-/Users/aeziox/Projects/WebTool/WebTool.iOS/obj/iPhoneSimulator/Debug/WebTool.iOS.pdb

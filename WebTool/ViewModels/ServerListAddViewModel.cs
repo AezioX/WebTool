@@ -19,7 +19,10 @@ namespace WebTool.ViewModels
 
         private async void Add()
         {
-            var isDomainValid = await _serverChecker.CheckIfDomainIsValid(HostName);
+            var inputDomain = HostName;
+            var domain = inputDomain.ToLower();
+
+            var isDomainValid = await _serverChecker.CheckIfDomainIsValid(domain);
 
             if(isDomainValid == true)
             {
@@ -28,10 +31,16 @@ namespace WebTool.ViewModels
                 newServersList.MonitoredServers.Add(new Server
                 {
                     Name = Name,
-                    HostName = HostName
+                    HostName = domain
                 });
 
                 App.Current.Resources["ServerList"] = newServersList;
+
+                //Clear screen
+                Name = "";
+                HostName = "";
+
+                Shell.Current.SendBackButtonPressed();
             }
             else
             {
