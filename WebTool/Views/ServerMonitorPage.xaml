@@ -8,7 +8,6 @@
              Title="Server Monitor">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add"
-                     IconImageSource="{DynamicResource SnakeIcon}"
                      Command="{Binding GoToAddPageCommand}"
                      Order="Primary"
                      Priority="0"/>

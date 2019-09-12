@@ -7,15 +7,13 @@
              Shell.TitleColor="{DynamicResource MainColor}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Get"
-                     IconImageSource="{DynamicResource SnakeIcon}"
+                     IconImageSource="{DynamicResource MenuVerticalIcon}"
                      Command="{Binding GetCommand}"
                      Order="Primary"
                      Priority="0"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Get" Command="{Binding GetCommand}"
-                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding IP}"
                    TextColor="{DynamicResource MainColor}"/>
             <BoxView HeightRequest="20"
