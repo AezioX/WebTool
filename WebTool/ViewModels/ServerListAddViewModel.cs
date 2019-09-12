@@ -7,10 +7,13 @@ namespace WebTool.ViewModels
 {
     public class ServerListAddViewModel : BaseViewModel
     {
+        private IServerChecker _serverChecker;
+
         public ICommand AddCommand => new Command(Add);
 
-        public ServerListAddViewModel()
+        public ServerListAddViewModel(IServerChecker serverChecker)
         {
+            _serverChecker = serverChecker;
         }
 
         private void Add()
