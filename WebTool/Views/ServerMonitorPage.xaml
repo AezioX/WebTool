@@ -60,6 +60,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

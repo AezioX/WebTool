@@ -4,7 +4,6 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
 using WebTool.Services.ServerMonitor;
-using WebTool.Views;
 
 namespace WebTool.ViewModels
 {
@@ -25,14 +24,16 @@ namespace WebTool.ViewModels
         {
             IsBusy = true;
 
+            ServersData = new ObservableCollection<Server>();
+
             try
             {
                 ServersData = await _serverMonitorService.GetUpdatedServersData();
             }
             catch (Exception ex)
             {
-                IsBusy = false;
                 await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+                IsBusy = false;
             }
 
             LastUpdated = "Last updated: Aug 10, 15:15";

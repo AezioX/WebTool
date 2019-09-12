@@ -19,7 +19,7 @@ namespace WebTool.ViewModels
 
         private async void Add()
         {
-            var inputDomain = HostName;
+            var inputDomain = HostName ?? "";
             var domain = inputDomain.ToLower();
 
             var isDomainValid = await _serverChecker.CheckIfDomainIsValid(domain);
