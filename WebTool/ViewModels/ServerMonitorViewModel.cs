@@ -42,7 +42,7 @@ namespace WebTool.ViewModels
 
         private async void GoToAddPage()
         {
-            await Shell.Current.GoToAsync("serverlistaddpage");
+            await Shell.Current.GoToAsync("ServerListAddPage");
         }
 
         private ObservableCollection<Server> _serversData;

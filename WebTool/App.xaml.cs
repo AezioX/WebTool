@@ -46,7 +46,7 @@ namespace WebTool
 
         private void RegisterShellRoutes()
         {
-            Routing.RegisterRoute("serverlistaddpage", typeof(ServerListAddPage));
+            Routing.RegisterRoute("ServerListAddPage", typeof(ServerListAddPage));
         }
 
         private void LoadSavedTheme()

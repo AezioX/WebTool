@@ -61,35 +61,35 @@
     </Shell.MenuItemTemplate>
 
     <FlyoutItem Title="Server Monitor" Icon="{DynamicResource TigerIcon}">
-        <Tab Route="servermonitor">
+        <Tab Route="ServerMonitor">
             <ShellContent>
                 <pages:ServerMonitorPage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Domain Database" Icon="{DynamicResource HorseIcon}">
-        <Tab Route="domaindatabase">
+        <Tab Route="DomainDatabase">
             <ShellContent>
                 <pages:DomainDatabasePage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Data Breach Checker" Icon="{DynamicResource OxIcon}">
-        <Tab Route="databreachchecker">
+        <Tab Route="DataBreachChecker">
             <ShellContent>
                 <pages:DataBreachPage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Device Info" Icon="{DynamicResource DogIcon}">
-        <Tab Route="deviceinfo">
+        <Tab Route="DeviceInfo">
             <ShellContent>
                 <pages:DeviceInfoPage/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Settings" Icon="{DynamicResource SettingsIcon}">
-        <Tab Route="settings">
+        <Tab Route="Settings">
             <ShellContent>
                 <pages:SettingsPage/>
             </ShellContent>
