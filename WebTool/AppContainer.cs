@@ -22,7 +22,6 @@ namespace WebTool
             builder.RegisterType<DeviceInfoPage>().SingleInstance();
             builder.RegisterType<DomainDatabasePage>().SingleInstance();
             builder.RegisterType<ServerMonitorPage>().SingleInstance();
-            builder.RegisterType<ServerListPage>().SingleInstance();
             builder.RegisterType<ServerListAddPage>().SingleInstance();
 
             //ViewModels
@@ -30,7 +29,6 @@ namespace WebTool
             builder.RegisterType<DeviceInfoViewModel>().SingleInstance();
             builder.RegisterType<DomainDatabaseViewModel>().SingleInstance();
             builder.RegisterType<ServerMonitorViewModel>().SingleInstance();
-            builder.RegisterType<ServerListViewModel>().SingleInstance();
             builder.RegisterType<ServerListAddViewModel>().SingleInstance();
 
             //Services
