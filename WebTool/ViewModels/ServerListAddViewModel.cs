@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 using Xamarin.Forms;
+using WebTool.Services.ServerMonitor;
 
 namespace WebTool.ViewModels
 {

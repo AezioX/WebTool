@@ -52,5 +52,31 @@ namespace WebTool.Services.ServerMonitor
 
             return output;
         }
+
+        public async Task<bool> CheckIfDomainIsValid(string domain)
+        {
+            var output = false;
+
+            await Task.Run(async () =>
+            {
+                try
+                {
+                    using (HttpResponseMessage response = await _httpClient.GetAsync(domain))
+                    {
+                        string serverStatus = "";
+                        serverStatus = Convert.ToString(response.StatusCode);
+
+                        if (serverStatus == "OK")
+                            output = true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    output = false;
+                }
+            });
+
+            return output;
+        }
     }
 }
