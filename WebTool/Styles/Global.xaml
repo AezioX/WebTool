@@ -25,7 +25,7 @@
     <FlyoutItem x:Key="SnakeIcon" Icon="snakegreen.png"/>
     <FlyoutItem x:Key="SettingsIcon" Icon="settingsgreen.png"/>
     <FlyoutItem x:Key="MenuVerticalIcon" Icon="menuverticalgreen.png"/>
-    <FlyoutItem x:Key="HomeIcon" Icon="menuverticalgreen.png"/>
+    <FlyoutItem x:Key="HomeIcon" Icon="homegreen.png"/>
 
 
 

@@ -1,27 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebTool.Views.HomePage">
+             x:Class="WebTool.Views.HomePage"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Shell.TitleColor="{DynamicResource MainColor}"
+             Title="Welcome">
     <ContentPage.Content>
         <StackLayout Margin="5">
             <Button Text="Server Monitor"
                     FontSize="Medium"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Domain Database"
                     FontSize="Medium"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Data Breach Checker"
                     FontSize="Medium"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Device Info"
                     FontSize="Medium"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Settings"
                     FontSize="Medium"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding GoToServerMonitorCommand}"/>
         </StackLayout>
