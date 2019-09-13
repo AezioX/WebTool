@@ -3,8 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebTool.Views.HomePage">
     <ContentPage.Content>
-        <StackLayout>
-
+        <StackLayout Margin="5">
+            <Button Text="Server Monitor"
+                    FontSize="Medium"
+                    TextColor="{DynamicResource MainColor}"
+                    Command="{Binding }"/>
+            <Button Text="Domain Database"
+                    FontSize="Medium"
+                    TextColor="{DynamicResource MainColor}"
+                    Command="{Binding }"/>
+            <Button Text="Data Breach Checker"
+                    FontSize="Medium"
+                    TextColor="{DynamicResource MainColor}"
+                    Command="{Binding }"/>
+            <Button Text="Device Info"
+                    FontSize="Medium"
+                    TextColor="{DynamicResource MainColor}"
+                    Command="{Binding }"/>
+            <Button Text="Settings"
+                    FontSize="Medium"
+                    TextColor="{DynamicResource MainColor}"
+                    Command="{Binding }"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
