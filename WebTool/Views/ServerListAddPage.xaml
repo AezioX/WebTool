@@ -6,7 +6,7 @@
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Add Server">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand">
+        <StackLayout Margin="5" VerticalOptions="CenterAndExpand">
             <Entry Text="{Binding Name}"
                    TextColor="{DynamicResource MainColor}"
                    Placeholder="Name of Server"

@@ -13,7 +13,7 @@
                      Priority="0"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="5">
             <Button Text="Refresh"
                     Command="{Binding RefreshCommand}"
                     FontSize="Medium"

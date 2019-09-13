@@ -6,7 +6,7 @@
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Data Breach Checker">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="3*"/>

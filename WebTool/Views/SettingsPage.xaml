@@ -6,7 +6,7 @@
              BackgroundColor="{DynamicResource DarkColor}"
              Title="Settings">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="5">
             <Button Text="Change Theme To AezioX's Choice" TextColor="{DynamicResource MainColor}"
                     Command="{Binding ChangeToAezioXThemeCommand}"/>
             <Button Text="Change Theme To Default Theme" TextColor="{DynamicResource MainColor}"
