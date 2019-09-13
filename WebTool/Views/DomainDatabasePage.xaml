@@ -3,15 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebTool.Views.DomainDatabasePage"
              BackgroundColor="{DynamicResource DarkColor}"
-             Title="Domain Database"
-             Shell.TitleColor="{DynamicResource MainColor}">
+             Shell.TitleColor="{DynamicResource MainColor}"
+             Title="Domain Database">
     <ContentPage.Content>
         <StackLayout>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2.5*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
                 <Entry Grid.Column="0"
                        Text="{Binding Domain}" TextColor="{DynamicResource MainColor}"
                        Placeholder="Find registered domains" PlaceholderColor="{DynamicResource MainColor}"
@@ -19,7 +22,7 @@
                 </Entry>
                 <Button Grid.Column="1"
                         Text="Search" TextColor="{DynamicResource MainColor}"
-                        FontAttributes="Bold" FontSize="Medium"
+                        FontSize="Small"
                         Command="{Binding SearchCommand}"/>
                 </Grid>
                 <ListView BackgroundColor="{DynamicResource DarkColor}"
