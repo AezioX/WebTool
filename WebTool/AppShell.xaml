@@ -60,6 +60,13 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
 
+    <FlyoutItem Title="Home" Icon="{DynamicResource TigerIcon}">
+        <Tab Route="Home">
+            <ShellContent>
+                <pages:HomePage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Server Monitor" Icon="{DynamicResource TigerIcon}">
         <Tab Route="ServerMonitor">
             <ShellContent>

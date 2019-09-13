@@ -7,23 +7,23 @@
             <Button Text="Server Monitor"
                     FontSize="Medium"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding }"/>
+                    Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Domain Database"
                     FontSize="Medium"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding }"/>
+                    Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Data Breach Checker"
                     FontSize="Medium"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding }"/>
+                    Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Device Info"
                     FontSize="Medium"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding }"/>
+                    Command="{Binding GoToServerMonitorCommand}"/>
             <Button Text="Settings"
                     FontSize="Medium"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding }"/>
+                    Command="{Binding GoToServerMonitorCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
