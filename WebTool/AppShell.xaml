@@ -60,7 +60,7 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
 
-    <FlyoutItem Title="Home" Icon="{DynamicResource TigerIcon}">
+    <FlyoutItem Title="Home" Icon="{DynamicResource HomeIcon}">
         <Tab Route="Home">
             <ShellContent>
                 <pages:HomePage/>
