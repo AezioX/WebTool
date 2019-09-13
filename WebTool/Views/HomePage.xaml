@@ -11,27 +11,32 @@
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToServerMonitorCommand}"/>
+                    Command="{Binding GoToServerMonitorCommand}"
+                    ImageSource="{DynamicResource TigerIcon}"/>
             <Button Text="Domain Database"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToDomainDatabaseCommand}"/>
+                    Command="{Binding GoToDomainDatabaseCommand}"
+                    ImageSource="{DynamicResource HorseIcon}"/>
             <Button Text="Data Breach Checker"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToDataBreachCheckerCommand}"/>
+                    Command="{Binding GoToDataBreachCheckerCommand}"
+                    ImageSource="{DynamicResource OxIcon}"/>
             <Button Text="Device Info"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToDeviceInfoCommand}"/>
+                    Command="{Binding GoToDeviceInfoCommand}"
+                    ImageSource="{DynamicResource DogIcon}"/>
             <Button Text="Settings"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToSettingsCommand}"/>
+                    Command="{Binding GoToSettingsCommand}"
+                    ImageSource="{DynamicResource SettingsIcon}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
