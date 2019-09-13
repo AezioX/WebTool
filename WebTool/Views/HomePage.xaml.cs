@@ -11,7 +11,7 @@ namespace WebTool.Views
         {
             InitializeComponent();
 
-            BindingContext = new HomeViewModel();
+            BindingContext = AppContainer.Resolve<HomeViewModel>();
         }
     }
 }

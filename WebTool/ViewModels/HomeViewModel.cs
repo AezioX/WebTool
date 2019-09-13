@@ -5,6 +5,7 @@ namespace WebTool.ViewModels
     {
         public HomeViewModel()
         {
+
         }
     }
 }
