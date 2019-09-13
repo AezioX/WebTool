@@ -16,22 +16,22 @@
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToServerMonitorCommand}"/>
+                    Command="{Binding GoToDomainDatabaseCommand}"/>
             <Button Text="Data Breach Checker"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToServerMonitorCommand}"/>
+                    Command="{Binding GoToDataBreachCheckerCommand}"/>
             <Button Text="Device Info"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToServerMonitorCommand}"/>
+                    Command="{Binding GoToDeviceInfoCommand}"/>
             <Button Text="Settings"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToServerMonitorCommand}"/>
+                    Command="{Binding GoToSettingsCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
