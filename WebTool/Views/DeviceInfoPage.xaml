@@ -7,7 +7,7 @@
              Shell.TitleColor="{DynamicResource MainColor}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Get"
-                     IconImageSource="{DynamicResource MenuVerticalIcon}"
+                     IconImageSource="{DynamicResource RefreshIcon}"
                      Command="{Binding GetCommand}"
                      Order="Primary"
                      Priority="0"/>
