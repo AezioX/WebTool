@@ -119,6 +119,14 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.1.0.555618, )"
+            },
+            "akavache": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "akavache.sqlite3": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             }
           },
           "imports": [
