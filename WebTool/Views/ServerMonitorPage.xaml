@@ -17,6 +17,7 @@
             <Button Text="Refresh"
                     Command="{Binding RefreshCommand}"
                     FontSize="Medium"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding LastUpdated}"
                    FontSize="Small"

@@ -152,5 +152,7 @@
     <BundleResource Include="Resources\menuverticalgreen.png" />
     <BundleResource Include="Resources\homered.png" />
     <BundleResource Include="Resources\homegreen.png" />
+    <BundleResource Include="Resources\plusgreen.png" />
+    <BundleResource Include="Resources\plusred.png" />
   </ItemGroup>
 </Project>

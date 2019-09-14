@@ -18,6 +18,7 @@
                    PlaceholderColor="{DynamicResource MainColor}"
                    MaxLength="50"/>
             <Button Text="Add"
+                    FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding AddCommand}"/>
         </StackLayout>

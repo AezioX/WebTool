@@ -57,7 +57,7 @@
                             FontSize="Medium"/>
                     </StackLayout>
                 </Grid>
-                <BoxView HeightRequest="10"/>
+                <BoxView HeightRequest="20"/>
                 <Label TextColor="{DynamicResource MainColor}"
                             Text="{Binding PwnCount, StringFormat='Compromised accounts: {0}'}"
                             FontSize="Small"/>
@@ -124,8 +124,8 @@
         <ViewCell>
             <StackLayout>
                 <Label TextColor="{DynamicResource MainColor}"
-                            Text="{Binding Name}"
-                            FontSize="Small"/>
+                       Text="{Binding Name}"
+                       FontSize="Small"/>
             </StackLayout>
         </ViewCell>
     </DataTemplate>
