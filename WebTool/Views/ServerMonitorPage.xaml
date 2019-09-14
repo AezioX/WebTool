@@ -12,14 +12,14 @@
                      Command="{Binding GoToAddPageCommand}"
                      Order="Primary"
                      Priority="0"/>
+        <ToolbarItem Text="Refresh"
+                     IconImageSource="{DynamicResource RefreshIcon}"
+                     Command="{Binding RefreshCommand}"
+                     Order="Primary"
+                     Priority="0"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="5">
-            <Button Text="Refresh"
-                    Command="{Binding RefreshCommand}"
-                    FontSize="Medium"
-                    FontAttributes="Bold"
-                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding LastUpdated}"
                    FontSize="Small"
                    TextColor="{DynamicResource MainColor}"
