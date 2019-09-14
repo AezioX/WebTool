@@ -9079,31 +9079,34 @@ namespace WebTool.Droid
 			public const int oxred = 2131165510;
 			
 			// aapt resource value: 0x7F070147
-			public const int plusred = 2131165511;
+			public const int plusgreen = 2131165511;
 			
 			// aapt resource value: 0x7F070148
-			public const int settingsgreen = 2131165512;
+			public const int plusred = 2131165512;
 			
 			// aapt resource value: 0x7F070149
-			public const int settingsred = 2131165513;
+			public const int settingsgreen = 2131165513;
 			
 			// aapt resource value: 0x7F07014A
-			public const int snakegreen = 2131165514;
+			public const int settingsred = 2131165514;
 			
 			// aapt resource value: 0x7F07014B
-			public const int snakered = 2131165515;
+			public const int snakegreen = 2131165515;
 			
 			// aapt resource value: 0x7F07014C
-			public const int tigergreen = 2131165516;
+			public const int snakered = 2131165516;
 			
 			// aapt resource value: 0x7F07014D
-			public const int tigerred = 2131165517;
+			public const int tigergreen = 2131165517;
 			
 			// aapt resource value: 0x7F07014E
-			public const int tooltip_frame_dark = 2131165518;
+			public const int tigerred = 2131165518;
 			
 			// aapt resource value: 0x7F07014F
-			public const int tooltip_frame_light = 2131165519;
+			public const int tooltip_frame_dark = 2131165519;
+			
+			// aapt resource value: 0x7F070150
+			public const int tooltip_frame_light = 2131165520;
 			
 			static Drawable()
 			{
