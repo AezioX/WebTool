@@ -26,7 +26,7 @@
     <FlyoutItem x:Key="SettingsIcon" Icon="settingsgreen.png"/>
     <FlyoutItem x:Key="MenuVerticalIcon" Icon="menuverticalgreen.png"/>
     <FlyoutItem x:Key="HomeIcon" Icon="homegreen.png"/>
-
+    <FlyoutItem x:Key="PlusIcon" Icon="plusgreen.png"/>
 
 
     <!-- DataTemplates -->
