@@ -6,37 +6,66 @@
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Welcome">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="5">
-            <Button Text="Server Monitor"
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+                <Button Text="Server Monitor" Grid.Column="1" Grid.Row="0"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource MainColor}"
+                        Command="{Binding GoToServerMonitorCommand}"/>
+                <Image Source="{DynamicResource TigerIcon}" Grid.Column="0" Grid.Row="0"
+                       HorizontalOptions="Center"
+                       HeightRequest="20"/>
+
+                <Button Text="Domain Database" Grid.Column="1" Grid.Row="1"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource MainColor}"
+                        Command="{Binding GoToDomainDatabaseCommand}"/>
+                <Image Source="{DynamicResource HorseIcon}" Grid.Column="0" Grid.Row="1"
+                       HorizontalOptions="Center"
+                       HeightRequest="20"/>
+
+                <Button Text="Data Breach Checker" Grid.Column="1" Grid.Row="2"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToServerMonitorCommand}"
-                    ImageSource="{DynamicResource TigerIcon}"/>
-            <Button Text="Domain Database"
+                    Command="{Binding GoToDataBreachCheckerCommand}"/>
+                <Image Source="{DynamicResource OxIcon}" Grid.Column="0" Grid.Row="2"
+                       HorizontalOptions="Center"
+                       HeightRequest="20"/>
+
+                <Button Text="Device Info" Grid.Column="1" Grid.Row="3"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToDomainDatabaseCommand}"
-                    ImageSource="{DynamicResource HorseIcon}"/>
-            <Button Text="Data Breach Checker"
+                    Command="{Binding GoToDeviceInfoCommand}"/>
+                <Image Source="{DynamicResource DogIcon}" Grid.Column="0" Grid.Row="3"
+                       HorizontalOptions="Center"
+                       HeightRequest="20"/>
+
+                <Button Text="Settings" Grid.Column="1" Grid.Row="4"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToDataBreachCheckerCommand}"
-                    ImageSource="{DynamicResource OxIcon}"/>
-            <Button Text="Device Info"
-                    FontSize="Medium"
-                    FontAttributes="Bold"
-                    TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToDeviceInfoCommand}"
-                    ImageSource="{DynamicResource DogIcon}"/>
-            <Button Text="Settings"
-                    FontSize="Medium"
-                    FontAttributes="Bold"
-                    TextColor="{DynamicResource MainColor}"
-                    Command="{Binding GoToSettingsCommand}"
-                    ImageSource="{DynamicResource SettingsIcon}"/>
+                    Command="{Binding GoToSettingsCommand}"/>
+                <Image Source="{DynamicResource SettingsIcon}" Grid.Column="0" Grid.Row="4"
+                       HorizontalOptions="Center"
+                       HeightRequest="20"/>
+            </Grid>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
