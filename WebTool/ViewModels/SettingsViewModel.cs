@@ -14,14 +14,18 @@ namespace WebTool.ViewModels
         {
         }
 
-        private void ChangeToAezioXTheme()
+        private async void ChangeToAezioXTheme()
         {
             App.ChangeThemeToAezioxChoice();
+
+            await Shell.Current.GoToAsync("//Home");
         }
 
-        private void ChangeToDefaultTheme()
+        private async void ChangeToDefaultTheme()
         {
             App.ChangeThemeToDefaultTheme();
+
+            await Shell.Current.GoToAsync("//Home");
         }
     }
 }
