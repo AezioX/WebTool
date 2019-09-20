@@ -115,7 +115,7 @@ namespace WebTool
             }
             catch (Exception)
             {
-                var servers = Servers.getInstance();
+                var servers = new Servers();
 
                 servers.MonitoredServers.Add(new Server
                 {

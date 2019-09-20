@@ -11,7 +11,7 @@ namespace WebTool.Services.ServerMonitor
         private IServerChecker _serverChecker;
 
         //BlobCache.UserAccount.GetObject<Servers>("Servers");
-        private Servers _servers = Servers.getInstance();
+        private Servers _servers = new Servers();
 
         public ServerMonitorService(IServerChecker serverChecker)
         {
@@ -20,7 +20,7 @@ namespace WebTool.Services.ServerMonitor
 
         public void AddServer(Server server)
         {
-            
+
         }
 
         public async Task<ObservableCollection<Server>> GetUpdatedServersData()
