@@ -128,14 +128,6 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
-                    Name = "Microsoft",
-                    Status = "",
-                    HostName = "https://microsoft.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
-                });
-
-                servers.MonitoredServers.Add(new Server
-                {
                     Name = "Twitter",
                     Status = "",
                     HostName = "https://twitter.com",
@@ -164,14 +156,6 @@ namespace WebTool
                     Name = "Apple",
                     Status = "",
                     HostName = "https://apple.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
-                });
-
-                servers.MonitoredServers.Add(new Server
-                {
-                    Name = "Reddit",
-                    Status = "",
-                    HostName = "https://reddit.com",
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
