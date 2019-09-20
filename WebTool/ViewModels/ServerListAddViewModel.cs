@@ -3,6 +3,8 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Services.ServerMonitor;
 using WebTool.Models.ServerMonitor;
+using System.Reactive.Linq;
+using Akavache;
 
 namespace WebTool.ViewModels
 {
@@ -26,7 +28,7 @@ namespace WebTool.ViewModels
 
             if(isDomainValid == true)
             {
-                var newServersList = (Servers)App.Current.Resources["ServerList"];
+                var newServersList = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
                 newServersList.MonitoredServers.Add(new Server
                 {
@@ -34,7 +36,7 @@ namespace WebTool.ViewModels
                     HostName = domain
                 });
 
-                App.Current.Resources["ServerList"] = newServersList;
+                await BlobCache.UserAccount.InsertObject("Servers", newServersList);
 
                 //Clear screen
                 Name = "";
