@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Reactive.Linq;
 using System.Threading.Tasks;
 using Akavache;
 using WebTool.Models.ServerMonitor;
@@ -10,7 +11,6 @@ namespace WebTool.Services.ServerMonitor
     {
         private IServerChecker _serverChecker;
 
-        //BlobCache.UserAccount.GetObject<Servers>("Servers");
         private Servers _servers = new Servers();
 
         public ServerMonitorService(IServerChecker serverChecker)
@@ -26,6 +26,8 @@ namespace WebTool.Services.ServerMonitor
         public async Task<ObservableCollection<Server>> GetUpdatedServersData()
         {
             var output = new ObservableCollection<Server>();
+
+            _servers = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
             var preprocessed = new ObservableCollection<Server>();
             foreach(var server in _servers.MonitoredServers)

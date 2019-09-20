@@ -5,6 +5,7 @@ using WebTool.Models.ServerMonitor;
 using System.Collections.Generic;
 using WebTool.Views;
 using Akavache;
+using System.Reactive.Linq;
 
 namespace WebTool
 {
@@ -107,11 +108,11 @@ namespace WebTool
             Preferences.Set("CurrentTheme", "Default Theme");
         }
 
-        private void CreateDefaultServerListIfEmpty()
+        private async void CreateDefaultServerListIfEmpty()
         {
             try
             {
-                BlobCache.UserAccount.GetObject<Servers>("Servers");
+               await BlobCache.UserAccount.GetObject<Servers>("Servers");
             }
             catch (Exception)
             {
@@ -174,7 +175,7 @@ namespace WebTool
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
-                BlobCache.UserAccount.InsertObject("Servers", servers);
+                await BlobCache.UserAccount.InsertObject("Servers", servers);
             }
         }
     }
