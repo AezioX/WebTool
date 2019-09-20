@@ -1,6 +1,7 @@
 /Users/aeziox/Projects/WebTool/WebTool/bin/Debug/netstandard2.0/WebTool.deps.json
 /Users/aeziox/Projects/WebTool/WebTool/bin/Debug/netstandard2.0/WebTool.dll
 /Users/aeziox/Projects/WebTool/WebTool/bin/Debug/netstandard2.0/WebTool.pdb
+/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.csprojAssemblyReference.cache
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/AppShell.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Styles/Global.xaml.g.cs
@@ -17,4 +18,3 @@
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.dll
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.pdb
-/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.csprojAssemblyReference.cache

@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Akavache;
 using WebTool.Models.ServerMonitor;
 
 namespace WebTool.Services.ServerMonitor
@@ -10,7 +10,8 @@ namespace WebTool.Services.ServerMonitor
     {
         private IServerChecker _serverChecker;
 
-        private Servers _servers = (Servers)App.Current.Resources["ServerList"];
+        //BlobCache.UserAccount.GetObject<Servers>("Servers");
+        private Servers _servers = Servers.getInstance();
 
         public ServerMonitorService(IServerChecker serverChecker)
         {

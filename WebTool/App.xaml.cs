@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
 using System.Collections.Generic;
 using WebTool.Views;
+using Akavache;
 
 namespace WebTool
 {
@@ -20,6 +21,9 @@ namespace WebTool
             LoadSavedTheme();
 
             RegisterShellRoutes();
+
+            //Initialize Akavache
+            Akavache.Registrations.Start("WebTool");
         }
 
         protected override void OnStart()
@@ -107,8 +111,7 @@ namespace WebTool
         {
             try
             {
-                if ("" == App.Current.Resources["ServerList"].ToString())
-                    return;
+                BlobCache.UserAccount.GetObject<Servers>("Servers");
             }
             catch (Exception)
             {
@@ -171,7 +174,7 @@ namespace WebTool
                     Logs = new List<string> { $"Added to list: {DateTime.Now}" }
                 });
 
-                App.Current.Resources["ServerList"] = servers;
+                BlobCache.UserAccount.InsertObject("Servers", servers);
             }
         }
     }
