@@ -32,6 +32,7 @@ namespace WebTool.ViewModels
 
                 newServersList.MonitoredServers.Add(new Server
                 {
+                    ID = Guid.NewGuid().ToString(),
                     Name = Name,
                     HostName = domain
                 });

@@ -19,9 +19,9 @@ namespace WebTool.Views
 
         public async void OnDelete(object sender, EventArgs e)
         {
-            var mi = ((MenuItem)sender);
+            var menuItem = (MenuItem)sender;
 
-            var selectedServer = (Server)mi.CommandParameter;
+            var selectedServer = (Server)menuItem.CommandParameter;
 
             var servers = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
