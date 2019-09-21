@@ -44,6 +44,9 @@ namespace WebTool.ViewModels
                 HostName = "";
 
                 Shell.Current.SendBackButtonPressed();
+
+                var viewModel = AppContainer.Resolve<ServerMonitorViewModel>();
+                viewModel.Refresh();
             }
             else
             {
