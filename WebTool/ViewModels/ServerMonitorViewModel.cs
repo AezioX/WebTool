@@ -20,7 +20,7 @@ namespace WebTool.ViewModels
             _serverMonitorService = serverMonitorService;
         }
 
-        private async void Refresh()
+        public async void Refresh()
         {
             IsBusy = true;
 

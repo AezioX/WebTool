@@ -28,7 +28,7 @@
                    VerticalOptions="End"/>
             <ListView x:Name="listServers"
                       SeparatorVisibility="None"
-                      SelectionMode="Single"
+                      SelectionMode="None"
                       BackgroundColor="{DynamicResource DarkColor}"
                       RefreshControlColor="{DynamicResource MainColor}"
                       ItemsSource="{Binding ServersData}">

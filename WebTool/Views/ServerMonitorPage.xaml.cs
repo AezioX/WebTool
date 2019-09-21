@@ -29,8 +29,8 @@ namespace WebTool.Views
 
             await BlobCache.UserAccount.InsertObject("Servers", servers);
 
-            listServers.ItemsSource = servers.MonitoredServers;
-            
+            var viewModel = AppContainer.Resolve<ServerMonitorViewModel>();
+            viewModel.Refresh();
         }
     }
 }
