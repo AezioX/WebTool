@@ -120,6 +120,7 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
+                    ID = Guid.NewGuid().ToString(),
                     Name = "Google",
                     Status = "",
                     HostName = "https://google.com",
@@ -128,6 +129,7 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
+                    ID = Guid.NewGuid().ToString(),
                     Name = "Twitter",
                     Status = "",
                     HostName = "https://twitter.com",
@@ -137,6 +139,7 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
+                    ID = Guid.NewGuid().ToString(),
                     Name = "Amazon",
                     Status = "",
                     HostName = "https://amazon.com",
@@ -145,6 +148,7 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
+                    ID = Guid.NewGuid().ToString(),
                     Name = "YouTube",
                     Status = "",
                     HostName = "https://youtube.com",
@@ -153,6 +157,7 @@ namespace WebTool
 
                 servers.MonitoredServers.Add(new Server
                 {
+                    ID = Guid.NewGuid().ToString(),
                     Name = "Apple",
                     Status = "",
                     HostName = "https://apple.com",

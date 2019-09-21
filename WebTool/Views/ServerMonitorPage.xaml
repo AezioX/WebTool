@@ -26,13 +26,21 @@
                    BackgroundColor="White"
                    HorizontalOptions="Center"
                    VerticalOptions="End"/>
-            <ListView SeparatorVisibility="None"
+            <ListView x:Name="listServers"
+                      SeparatorVisibility="None"
+                      SelectionMode="Single"
                       BackgroundColor="{DynamicResource DarkColor}"
                       RefreshControlColor="{DynamicResource MainColor}"
                       ItemsSource="{Binding ServersData}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnDelete"
+                                          CommandParameter="{Binding .}"
+                                          Text="Delete"
+                                          IsDestructive="True"/>
+                            </ViewCell.ContextActions>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="120"/>

@@ -5,7 +5,7 @@ namespace WebTool.Models.ServerMonitor
 {
     public class Server
     {
-        public Guid ID { get; set; } = Guid.NewGuid();
+        public string ID { get; set; } = "";
         public string Name { get; set; } = "";
         public string HostName { get; set; } = "";
         public string Status { get; set; } = "";
