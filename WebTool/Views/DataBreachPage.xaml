@@ -26,6 +26,7 @@
                         FontAttributes="Bold"
                         Command="{Binding CheckAccountCommand}"/>
             </Grid>
+            <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
                 <ListView ItemTemplate="{DynamicResource dataBreachResultTemplate}"
                           ItemsSource="{Binding Results}"
                           BackgroundColor="{DynamicResource DarkColor}"
@@ -33,7 +34,6 @@
                           SeparatorVisibility="None"
                           SelectionMode="None">
                 </ListView>
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

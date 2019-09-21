@@ -4,6 +4,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
 using WebTool.Services.ServerMonitor;
+using System.Threading;
 
 namespace WebTool.ViewModels
 {
@@ -25,6 +26,9 @@ namespace WebTool.ViewModels
             IsBusy = true;
 
             ServersData = new ObservableCollection<Server>();
+
+            //Prevents seemingly random Foundation.MonoTouch exception
+            Thread.Sleep(100);
 
             try
             {

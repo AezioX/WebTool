@@ -23,9 +23,9 @@
             <Label Text="{Binding LastUpdated}"
                    FontSize="Small"
                    TextColor="{DynamicResource MainColor}"
-                   BackgroundColor="White"
                    HorizontalOptions="Center"
                    VerticalOptions="End"/>
+            <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
             <ListView x:Name="listServers"
                       SeparatorVisibility="None"
                       SelectionMode="None"
@@ -56,20 +56,17 @@
                                        TextColor="{DynamicResource MainColor}"
                                        Text="{Binding HostName}"
                                        HorizontalOptions="Start"
-                                       BackgroundColor="White"
                                        FontSize="Small"/>
                                 <Label Grid.Column="2"
                                        TextColor="{DynamicResource MainColor}"
                                        Text="{Binding Status}"
                                        FontSize="Small"
-                                       BackgroundColor="White"
                                        HorizontalOptions="End"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

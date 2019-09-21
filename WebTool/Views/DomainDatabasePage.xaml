@@ -26,7 +26,8 @@
                         FontAttributes="Bold"
                         Command="{Binding SearchCommand}"/>
                 </Grid>
-                <ListView BackgroundColor="{DynamicResource DarkColor}"
+            <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
+            <ListView BackgroundColor="{DynamicResource DarkColor}"
                           ItemsSource="{Binding DomainSearchResults}"
                           HasUnevenRows="True"
                           SeparatorVisibility="None">
@@ -42,8 +43,7 @@
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                </ListView>
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

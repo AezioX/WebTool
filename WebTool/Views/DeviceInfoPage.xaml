@@ -16,7 +16,8 @@
         <StackLayout Margin="5">
             <Label Text="{Binding IP}"
                    TextColor="{DynamicResource MainColor}"/>
-            <BoxView HeightRequest="20"
+            <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
+            <BoxView HeightRequest="10"
                      BackgroundColor="{DynamicResource DarkColor}"/>
             <Label Text="{Binding DeviceName}"
                    TextColor="{DynamicResource MainColor}"/>
@@ -30,7 +31,6 @@
                    TextColor="{DynamicResource MainColor}"/>
             <Label Text="{Binding DeviceType}"
                    TextColor="{DynamicResource MainColor}"/>
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

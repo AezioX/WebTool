@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using WebTool.Models.ServerMonitor;
 
@@ -25,6 +26,9 @@ namespace WebTool.Services.ServerMonitor
                 {
                     try
                     {
+                        //Prevents seemingly random Foundation.MonoTouch exception
+                        Thread.Sleep(100);
+
                         using (HttpResponseMessage response = await _httpClient.GetAsync(server.HostName))
                         {
                             string serverStatus = "";
