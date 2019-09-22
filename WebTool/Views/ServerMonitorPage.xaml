@@ -23,8 +23,7 @@
             <Label Text="{Binding LastUpdated}"
                    FontSize="Small"
                    TextColor="{DynamicResource MainColor}"
-                   HorizontalOptions="Center"
-                   VerticalOptions="End"/>
+                   HorizontalOptions="End"/>
             <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
             <ListView x:Name="listServers"
                       SeparatorVisibility="None"
