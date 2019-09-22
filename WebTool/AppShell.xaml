@@ -9,7 +9,7 @@
              ForegroundColor="{DynamicResource MainColor}">
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid BackgroundColor="{DynamicResource DarkColor}" HeightRequest="100">
+            <Grid BackgroundColor="{DynamicResource DarkColor}" HeightRequest="150">
                 <Image Aspect="AspectFill"
                   Source="{DynamicResource FlyoutHeaderImage}"
                   Opacity="1"/>
