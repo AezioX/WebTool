@@ -19,11 +19,6 @@ namespace WebTool.Services.ServerMonitor
             _serverChecker = serverChecker;
         }
 
-        public void AddServer(Server server)
-        {
-
-        }
-
         public async Task<ObservableCollection<Server>> GetUpdatedServersData()
         {
             var output = new ObservableCollection<Server>();
