@@ -27,6 +27,10 @@ namespace WebTool.ViewModels
             try
             {
                 DomainSearchResults = await _domainDatabaseService.CheckDomainsDatabase(Domain);
+
+                //API used never returns more than 50 results so this informs the user in case the limit is reached.
+                if(DomainSearchResults.Count == 50)
+                    DomainSearchResults.Add(new DomainsData { Domain = "Limited to 50 results." });
             }
             catch (Exception ex)
             {
