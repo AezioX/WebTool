@@ -27,7 +27,7 @@ namespace WebTool.ViewModels
             }
             catch (Exception)
             {
-                IP = "Error.";
+                IP = "Public IP address: Error. Check network connection.";
             }
 
             DeviceName = $"Device Name: {DeviceInfo.Name}";
