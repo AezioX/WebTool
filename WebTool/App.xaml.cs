@@ -86,6 +86,7 @@ namespace WebTool
             App.Current.Resources["HomeIcon"] = "homered.png";
             App.Current.Resources["PlusIcon"] = "plusred.png";
             App.Current.Resources["RefreshIcon"] = "refreshred.png";
+            App.Current.Resources["InfoIcon"] = "infored.png";
 
             Preferences.Set("CurrentTheme", "AezioX's Choice");
         }
@@ -104,6 +105,7 @@ namespace WebTool
             App.Current.Resources["HomeIcon"] = "homegreen.png";
             App.Current.Resources["PlusIcon"] = "plusgreen.png";
             App.Current.Resources["RefreshIcon"] = "refreshgreen.png";
+            App.Current.Resources["InfoIcon"] = "infogreen.png";
 
             Preferences.Set("CurrentTheme", "Default Theme");
         }
