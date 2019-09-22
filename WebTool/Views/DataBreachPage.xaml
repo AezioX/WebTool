@@ -7,7 +7,7 @@
              Title="Data Breach Checker">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Info"
-                     IconImageSource="{DynamicResource MenuVerticalIcon}"
+                     IconImageSource="{DynamicResource InfoIcon}"
                      Command="{Binding ShowInfoCommand}"
                      Order="Primary"
                      Priority="0"/>

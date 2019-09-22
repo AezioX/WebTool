@@ -13,6 +13,8 @@ namespace WebTool.ViewModels
 
         public ICommand CheckAccountCommand => new Command(CheckAccount);
 
+        public ICommand ShowInfoCommand => new Command(ShowInfo);
+
         public DataBreachViewModel(IDataBreachService dataBreachService)
         {
             _dataBreachService = dataBreachService;
@@ -34,6 +36,11 @@ namespace WebTool.ViewModels
             }
 
             IsBusy = false;
+        }
+
+        private async void ShowInfo()
+        {
+            await Shell.Current.GoToAsync("DataBreachInfoPage");
         }
 
         private ObservableCollection<BreachResults> _results;
