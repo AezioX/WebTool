@@ -38,7 +38,7 @@
                             </ViewCell.ContextActions>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
