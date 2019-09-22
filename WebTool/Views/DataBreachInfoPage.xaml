@@ -6,8 +6,11 @@
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Info">
     <ContentPage.Content>
-        <StackLayout>
-
+        <StackLayout Margin="5">
+            <Label Text="Your email or account name are not stored. WebTool sends them directly to the API provided by haveibeenpwned.com. For more info visit their website:"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
