@@ -34,6 +34,9 @@ namespace WebTool.Services.ServerMonitor
                             string serverStatus = "";
                             serverStatus = Convert.ToString(response.StatusCode);
 
+                            if (serverStatus == "OK")
+                                serverStatus = "Online";
+
                             output.Add(new Server
                             {
                                 ID = $"{server.ID}",
