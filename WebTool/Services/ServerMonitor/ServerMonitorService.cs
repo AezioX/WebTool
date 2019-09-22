@@ -4,6 +4,7 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using Akavache;
 using WebTool.Models.ServerMonitor;
+using WebTool.ViewModels;
 
 namespace WebTool.Services.ServerMonitor
 {

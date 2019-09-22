@@ -41,7 +41,7 @@ namespace WebTool.ViewModels
                 IsBusy = false;
             }
 
-            LastUpdated = $"Last updated: {DateTime.Now}";
+            LastUpdated = $"Last updated: {DateTime.Now.ToString("yyyy-MM-dd  HH:mm:ss tt")}";
         }
 
         private async void GoToAddPage()
