@@ -20,10 +20,6 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="5">
-            <Label Text="{Binding LastUpdated}"
-                   FontSize="Small"
-                   TextColor="{DynamicResource MainColor}"
-                   HorizontalOptions="End"/>
             <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
             <ListView x:Name="listServers"
                       SeparatorVisibility="None"
@@ -66,6 +62,10 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label Text="{Binding LastUpdated}"
+                   FontSize="Small"
+                   TextColor="{DynamicResource MainColor}"
+                   HorizontalOptions="Start"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
