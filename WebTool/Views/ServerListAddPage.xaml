@@ -4,9 +4,9 @@
              x:Class="WebTool.Views.ServerListAddPage"
              BackgroundColor="{DynamicResource DarkColor}"
              Shell.TitleColor="{DynamicResource MainColor}"
-             Title="Add Server">
+             Title="New Server">
     <ContentPage.Content>
-        <StackLayout Margin="5" VerticalOptions="CenterAndExpand">
+        <StackLayout Margin="5" VerticalOptions="Start">
             <Entry Text="{Binding Name}"
                    TextColor="{DynamicResource MainColor}"
                    Placeholder="Name of Server"
