@@ -5,8 +5,8 @@
              xmlns:pages="clr-namespace:WebTool.Views"
              BackgroundColor="{DynamicResource DarkColor}"
              FlyoutBackgroundColor="{DynamicResource DarkColor}"
-             ForegroundColor="{DynamicResource MainColor}"
-             Visual="Material">
+             Visual="Material"
+             ForegroundColor="{DynamicResource MainColor}">
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid BackgroundColor="{DynamicResource DarkColor}" HeightRequest="100">
@@ -32,9 +32,9 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="{Binding FlyoutIcon}"
                        Margin="15"
-                       HeightRequest="45"/>
+                       HeightRequest="15"/>
                 <Label Grid.Column="1"
-                       FontSize="Medium"
+                       FontSize="Small"
                        TextColor="{DynamicResource MainColor}"
                        Text="{Binding Title}"
                        VerticalTextAlignment="Center"/>

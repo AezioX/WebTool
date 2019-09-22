@@ -167,7 +167,7 @@
                    <Label Text="What is a Sensitive breach?"
                    LineBreakMode="WordWrap"
                    TextColor="{DynamicResource MainColor}"
-                   FontSize="Small"/>
+                   FontSize="Medium"/>
                    <Label Text="HIBP enables you to discover if your account was exposed in most of the data breaches by directly searching the system. However, certain breaches are particularly sensitive in that someone's presence in the breach may adversely impact them if others are able to find that they were a member of the site. These breaches are classed as Sensitive and may not be publicly searched."
                    LineBreakMode="WordWrap"
                    TextColor="{DynamicResource MainColor}"
