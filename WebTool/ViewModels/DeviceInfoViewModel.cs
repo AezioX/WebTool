@@ -21,7 +21,15 @@ namespace WebTool.ViewModels
         {
             IsBusy = true;
 
-            IP = await _deviceInfoService.GetCurrentIPAsync();
+            try
+            {
+                IP = await _deviceInfoService.GetCurrentIPAsync();
+            }
+            catch (Exception)
+            {
+                IP = "Error.";
+            }
+
             DeviceName = $"Device Name: {DeviceInfo.Name}";
             DeviceModel = $"Device Model: {DeviceInfo.Model}";
             Manufacturer = $"Manufacturer: {DeviceInfo.Manufacturer}";
