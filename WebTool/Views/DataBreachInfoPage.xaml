@@ -6,11 +6,184 @@
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Info">
     <ContentPage.Content>
-        <StackLayout Margin="5">
-            <Label Text="Your email or account name are not stored. WebTool sends them directly to the API provided by haveibeenpwned.com. For more info visit their website:"
+        <StackLayout Margin="15">
+            <Label Text="Data Breach Checker checks if you have an account that has been compromised in a data breach."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+            <BoxView HeightRequest="10"/>
+            <Label Text="Your email or account name are not stored."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+            <BoxView HeightRequest="10"/>
+            <Label Text="WebTool sends them directly to the API provided by haveibeenpwned.com (HIBP). For more info visit their website: https://haveibeenpwned.com"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+            <BoxView HeightRequest="10"/>
+            <ScrollView>
+                <StackLayout>
+                   <Label Text="HIBP Introduction"
                    LineBreakMode="WordWrap"
                    TextColor="{DynamicResource MainColor}"
                    FontSize="Medium"/>
+                   <Label Text="HIBP exists because of violations of privacy. Our data is leaked, sold, redistributed and abused to our detriment and beyond our control. HIBP was established as a free service in 2013 to help give us visibility as to how our personal data spreads. Whilst we may no longer be able to control it once breached, we can at least understand what's been leaked, where it's been leaked from and what precautionary measures we can now take as a result."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="Breach data stored in HIBP"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="When a data breach is loaded into HIBP, only the email addresses are stored in the online system. No other data of any kind (names, phone numbers, etc) are stored on data load."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="When you search for an email address"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="Searching for an email address only ever retrieves the address from storage then returns it in the response, the searched address is never explicitly stored anywhere."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text="Data breaches flagged as sensitive are not returned in public searches, they can only be viewed by using the notification service and verifying ownership of the email address first. "
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="How HIBP protects data"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="Security on HIBP is handled by a defence in depth approach, that is the service employs many different layers of security including (but not limited to):"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 1. All data transmitted over the internet is done over HTTPS."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 2. Cloudflare is used extensively to block potentially malicious requests."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 3. Rate limits on APIs are implemented at both the code level and via Cloudflare."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 4. Regular security scans are performed to identify code or configuration vulnerabilies."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 5. Firewalls are employed to limit access to services running on Microsoft Azure."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 6. Disclosure of any security vulnerabilities are encouraged via the security.txt file."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 7. Third party components are kept well-maintained."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 8. External client side dependencies are embedded using subresource integrity hashes."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="Controlling entity and hosting"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="HIBP is owned and operated by Superlative Enterprises Pty Ltd, an Australian proprietary limited company (ABN 62 085 442 020) based in the state of Queensland. All services are hosted in the West US Microsoft Azure data centre."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="How is a breach verified as legitimate?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="There are often breaches announced by attackers which in turn are exposed as hoaxes. There is a balance between making data searchable early and performing sufficient due diligence to establish the legitimacy of the breach. The following activities are usually performed in order to validate breach legitimacy:"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 1. Has the impacted service publicly acknowledged the breach?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 2. Does the data in the breach turn up in a Google search (i.e. it's just copied from another source)?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 3. Is the structure of the data consistent with what you'd expect to see in a breach?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 4. Have the attackers provided sufficient evidence to demonstrate the attack vector?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text=" 5. Do the attackers have a track record of either reliably releasing breaches or falsifying them?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="What is a Fabricated breach?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="Some breaches may be flagged as Fabricated. In these cases, it is highly unlikely that the breach contains legitimate data sourced from the alleged site but it may still be sold or traded under the auspices of legitimacy. Often these incidents are comprised of data aggregated from other locations (or may be entirely fabricated), yet still contain actual email addresses unbeknownst to the account holder. Fabricated breaches are still included in the system because regardless of their legitimacy, they still contain personal information about individuals who want to understand their exposure on the web."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="What is a Retired breach?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="After a security incident which results in the disclosure of account data, the breach may be loaded into HIBP where it then sends notifications to impacted subscribers and becomes searchable. In very rare circumstances, that breach may later be permanently remove from HIBP where it is then classed as a Retired breach."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text="A retired breach is typically one where the data does not appear in other locations on the web, that is it's not being traded or redistributed. Deleting it from HIBP provides those impacted with assurance that their data can no longer be found in any remaining locations."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="What is a Sensitive breach?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                   <Label Text="HIBP enables you to discover if your account was exposed in most of the data breaches by directly searching the system. However, certain breaches are particularly sensitive in that someone's presence in the breach may adversely impact them if others are able to find that they were a member of the site. These breaches are classed as Sensitive and may not be publicly searched."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+
+                   <BoxView HeightRequest="10"/>
+                   <Label Text="What is a Spam list?"
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Medium"/>
+                   <Label Text="Occasionally, large volumes of personal data are found being utilised for the purposes of sending targeted spam. This often includes many of the same attributes frequently found in data breaches such as names, addresses, phones numbers and dates of birth. The lists are often aggregated from multiple sources, frequently by eliciting personal information from people with the promise of a monetary reward . Whilst the data may not have been sourced from a breached system, the personal nature of the information and the fact that it's redistributed in this fashion unbeknownst to the owners warrants inclusion here."
+                   LineBreakMode="WordWrap"
+                   TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
