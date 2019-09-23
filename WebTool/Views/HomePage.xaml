@@ -14,11 +14,11 @@
                     <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="130"/>
-                    <RowDefinition Height="130"/>
-                    <RowDefinition Height="130"/>
-                    <RowDefinition Height="130"/>
-                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
                 <Button Text="Server Monitor" Grid.Column="1" Grid.Row="0"
                         FontSize="Medium"

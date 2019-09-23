@@ -127,7 +127,7 @@ namespace WebTool
                     Name = "Google",
                     Status = "",
                     HostName = "https://google.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
                 });
 
                 servers.MonitoredServers.Add(new Server
@@ -136,7 +136,7 @@ namespace WebTool
                     Name = "Twitter",
                     Status = "",
                     HostName = "https://twitter.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
                 });
 
 
@@ -146,7 +146,7 @@ namespace WebTool
                     Name = "Amazon",
                     Status = "",
                     HostName = "https://amazon.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
                 });
 
                 servers.MonitoredServers.Add(new Server
@@ -155,7 +155,7 @@ namespace WebTool
                     Name = "YouTube",
                     Status = "",
                     HostName = "https://youtube.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
                 });
 
                 servers.MonitoredServers.Add(new Server
@@ -164,7 +164,25 @@ namespace WebTool
                     Name = "Apple",
                     Status = "",
                     HostName = "https://apple.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now}" }
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    ID = Guid.NewGuid().ToString(),
+                    Name = "Netflix",
+                    Status = "",
+                    HostName = "https://netflix.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
+                });
+
+                servers.MonitoredServers.Add(new Server
+                {
+                    ID = Guid.NewGuid().ToString(),
+                    Name = "Trello",
+                    Status = "",
+                    HostName = "https://trello.com",
+                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
                 });
 
                 await BlobCache.UserAccount.InsertObject("Servers", servers);
