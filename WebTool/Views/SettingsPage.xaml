@@ -15,10 +15,10 @@
                     Command="{Binding ChangeToAezioXThemeCommand}"/>
                 <BoxView HeightRequest="20"/>
                 <Label Text="Server Monitor" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource MainColor}"/>
-                <Button Text="Restore Default Server List" TextColor="{DynamicResource MainColor}"
-                    Command="{Binding RestoreServerListCommand}"/>
                 <Button Text="Delete Server List" TextColor="{DynamicResource MainColor}"
                     Command="{Binding DeleteServerListCommand}"/>
+                <Button Text="Restore Default Server List" TextColor="{DynamicResource MainColor}"
+                    Command="{Binding RestoreServerListCommand}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

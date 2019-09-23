@@ -20,13 +20,15 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="5">
-            <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
             <ListView x:Name="listServers"
                       SeparatorVisibility="None"
                       SelectionMode="None"
                       BackgroundColor="{DynamicResource DarkColor}"
                       RefreshControlColor="{DynamicResource MainColor}"
-                      ItemsSource="{Binding ServersData}">
+                      ItemsSource="{Binding ServersData}"
+                      IsPullToRefreshEnabled="True"
+                      RefreshCommand="{Binding RefreshCommand}"
+                      IsRefreshing="{Binding IsBusy}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -38,14 +40,15 @@
                             </ViewCell.ContextActions>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="110"/>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="60"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="0"
                                        TextColor="{DynamicResource MainColor}"
                                        Text="{Binding Name}"
                                        FontAttributes="Bold"
+                                       HorizontalOptions="Start"
                                        FontSize="Medium"/>
                                 <Label Grid.Column="1"
                                        TextColor="{DynamicResource MainColor}"

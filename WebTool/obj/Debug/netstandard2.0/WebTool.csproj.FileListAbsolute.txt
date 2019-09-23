@@ -12,7 +12,6 @@
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/ServerListAddPage.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/ServerMonitorPage.xaml.g.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/Views/SettingsPage.xaml.g.cs
-/Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.csproj.CoreCompileInputs.cache
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.AssemblyInfoInputs.cache
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/WebTool.AssemblyInfo.cs
 /Users/aeziox/Projects/WebTool/WebTool/obj/Debug/netstandard2.0/XamlC.stamp
