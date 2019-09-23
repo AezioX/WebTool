@@ -50,7 +50,7 @@ namespace WebTool.ViewModels
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Use a valid domain.", "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", $"Use a valid domain and check network connection.", "OK");
             }
         }
 
