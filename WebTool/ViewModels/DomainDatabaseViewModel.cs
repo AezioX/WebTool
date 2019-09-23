@@ -37,7 +37,7 @@ namespace WebTool.ViewModels
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", $"Unable to access domain database. Check network connection.", "OK");
             }
 
             IsBusy = false;

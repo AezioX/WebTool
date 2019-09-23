@@ -16,6 +16,8 @@ namespace WebTool.ViewModels
 
         public ICommand RestoreServerListCommand => new Command(RestoreServerList);
 
+        public ICommand DeleteServerListCommand => new Command(DeleteServerList);
+
         public SettingsViewModel()
         {
         }
@@ -106,6 +108,22 @@ namespace WebTool.ViewModels
                 await BlobCache.UserAccount.InsertObject("Servers", servers);
 
                 await Application.Current.MainPage.DisplayAlert("", "Default server list restored.", "OK");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+            }
+        }
+
+        private async void DeleteServerList()
+        {
+            try
+            {
+                var servers = new Servers();
+
+                await BlobCache.UserAccount.InsertObject("Servers", servers);
+
+                await Application.Current.MainPage.DisplayAlert("", "Server list deleted.", "OK");
             }
             catch (Exception ex)
             {
