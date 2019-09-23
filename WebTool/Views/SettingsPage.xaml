@@ -6,11 +6,18 @@
              BackgroundColor="{DynamicResource DarkColor}"
              Title="Settings">
     <ContentPage.Content>
-        <StackLayout Margin="5">
-            <Button Text="Change Theme To AezioX's Choice" TextColor="{DynamicResource MainColor}"
-                    Command="{Binding ChangeToAezioXThemeCommand}"/>
-            <Button Text="Change Theme To Default Theme" TextColor="{DynamicResource MainColor}"
+        <ScrollView>
+            <StackLayout Margin="5">
+                <Label Text="Theme selection" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource MainColor}"/>
+                <Button Text="Default Theme" TextColor="{DynamicResource MainColor}"
                     Command="{Binding ChangeToDefaultThemeCommand}"/>
-        </StackLayout>
+                <Button Text="Red Theme" TextColor="{DynamicResource MainColor}"
+                    Command="{Binding ChangeToAezioXThemeCommand}"/>
+                <BoxView HeightRequest="20"/>
+                <Label Text="Server Monitor" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource MainColor}"/>
+                <Button Text="Restore Server List to Default" TextColor="{DynamicResource MainColor}"
+                    Command="{Binding RestoreServerListCommand}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

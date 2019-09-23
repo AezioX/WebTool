@@ -176,15 +176,6 @@ namespace WebTool
                     Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
                 });
 
-                servers.MonitoredServers.Add(new Server
-                {
-                    ID = Guid.NewGuid().ToString(),
-                    Name = "Trello",
-                    Status = "",
-                    HostName = "https://trello.com",
-                    Logs = new List<string> { $"Added to list: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}" }
-                });
-
                 await BlobCache.UserAccount.InsertObject("Servers", servers);
             }
         }
