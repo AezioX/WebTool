@@ -6,6 +6,9 @@ using WebTool.Models.ServerMonitor;
 using WebTool.Services.ServerMonitor;
 using System.Threading;
 using System.Collections.Generic;
+using Akavache;
+using System.Reactive.Linq;
+using System.Threading.Tasks;
 
 namespace WebTool.ViewModels
 {
@@ -28,6 +31,15 @@ namespace WebTool.ViewModels
 
             ServersData = new ObservableCollection<Server>();
 
+            if (await CheckIfServerListIsEmpty() == true)
+            {
+                IsBusy = false;
+
+                LastUpdated = "Server list is empty.";
+
+                return;
+            }
+
             //Prevents seemingly random Foundation.MonoTouch exception
             Thread.Sleep(120);
 
@@ -44,6 +56,16 @@ namespace WebTool.ViewModels
             }
 
             LastUpdated = $"Last updated: {DateTime.Now.ToString("yyyy-MM-dd  hh:mm:ss tt")}";
+        }
+
+        private async Task<bool> CheckIfServerListIsEmpty()
+        {
+            var serverList = await BlobCache.UserAccount.GetObject<Servers>("Servers");
+
+            if (serverList.MonitoredServers.Count == 0)
+                return true;
+
+            return false;
         }
 
         private async void GoToAddPage()
