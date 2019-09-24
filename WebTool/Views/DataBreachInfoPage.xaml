@@ -11,16 +11,29 @@
                    LineBreakMode="WordWrap"
                    TextColor="{DynamicResource MainColor}"
                    FontSize="Small"/>
-            <BoxView HeightRequest="10"/>
+            <BoxView HeightRequest="5"/>
             <Label Text="Your email or account name are not stored."
                    LineBreakMode="WordWrap"
                    TextColor="{DynamicResource MainColor}"
                    FontSize="Small"/>
-            <BoxView HeightRequest="10"/>
-            <Label Text="WebTool sends them directly to the API provided by haveibeenpwned.com (HIBP). For more info visit their website: https://haveibeenpwned.com"
-                   LineBreakMode="WordWrap"
-                   TextColor="{DynamicResource MainColor}"
-                   FontSize="Small"/>
+            <BoxView HeightRequest="5"/>
+            <Label TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"
+                   LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="WebTool sends them directly to the API provided by haveibeenpwned.com (HIBP). For more info visit their website: "/>
+                        <Span Text="haveibeenpwned.com"
+                              TextColor="Blue"
+                              TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                              <TapGestureRecognizer Command="{Binding GoToHIBPCommand}"
+                                          CommandParameter="https://haveibeenpwned.com"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+               </Label.FormattedText>
+            </Label>
             <BoxView HeightRequest="10"/>
             <ScrollView>
                 <StackLayout>
