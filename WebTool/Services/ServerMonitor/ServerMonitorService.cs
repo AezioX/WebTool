@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Reactive.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Akavache;
 using WebTool.Models.ServerMonitor;
@@ -23,11 +25,17 @@ namespace WebTool.Services.ServerMonitor
         {
             var output = new ObservableCollection<Server>();
 
+            //Prevents seemingly random Foundation.MonoTouch exception
+            Thread.Sleep(100);
+
             _servers = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
             var preprocessed = new ObservableCollection<Server>();
             foreach(var server in _servers.MonitoredServers)
             {
+                //Prevents seemingly random Foundation.MonoTouch exception
+                Thread.Sleep(100);
+
                 preprocessed.Add(server);
             }
 

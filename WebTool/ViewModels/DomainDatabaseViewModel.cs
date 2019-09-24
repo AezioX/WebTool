@@ -35,7 +35,7 @@ namespace WebTool.ViewModels
                     DomainSearchResults.Add(new DomainsData { Domain = "Limited to 50 results." });
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", $"Unable to access domain database. Check network connection.", "OK");
             }

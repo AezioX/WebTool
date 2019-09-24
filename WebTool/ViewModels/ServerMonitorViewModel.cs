@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
 using WebTool.Services.ServerMonitor;
 using System.Threading;
+using System.Collections.Generic;
 
 namespace WebTool.ViewModels
 {
@@ -27,12 +28,10 @@ namespace WebTool.ViewModels
 
             ServersData = new ObservableCollection<Server>();
 
-            //Prevents seemingly random Foundation.MonoTouch exception
-            Thread.Sleep(100);
-
             try
             {
                 ServersData = await _serverMonitorService.GetUpdatedServersData();
+
                 IsBusy = false;
             }
             catch (Exception ex)
