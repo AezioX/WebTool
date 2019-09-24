@@ -21,6 +21,8 @@ namespace WebTool.ViewModels
 
         private async void Add()
         {
+            IsBusy = true;
+
             var inputDomain = HostName ?? "";
             var domain = inputDomain.ToLower();
 
@@ -39,6 +41,8 @@ namespace WebTool.ViewModels
 
                 await BlobCache.UserAccount.InsertObject("Servers", newServersList);
 
+                IsBusy = false;
+
                 //Clear screen
                 Name = "";
                 HostName = "";
@@ -50,6 +54,8 @@ namespace WebTool.ViewModels
             }
             else
             {
+                IsBusy = false;
+
                 await Application.Current.MainPage.DisplayAlert("Error", $"Use a valid domain and check network connection.", "OK");
             }
         }
