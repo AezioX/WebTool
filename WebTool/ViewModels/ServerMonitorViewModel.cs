@@ -28,6 +28,9 @@ namespace WebTool.ViewModels
 
             ServersData = new ObservableCollection<Server>();
 
+            //Prevents seemingly random Foundation.MonoTouch exception
+            Thread.Sleep(100);
+
             try
             {
                 ServersData = await _serverMonitorService.GetUpdatedServersData();

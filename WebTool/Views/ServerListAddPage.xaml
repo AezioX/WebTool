@@ -6,7 +6,7 @@
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="New Server">
     <ContentPage.Content>
-        <StackLayout Margin="5" VerticalOptions="Start">
+        <StackLayout Margin="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <Entry Text="{Binding Name}"
                    TextColor="{DynamicResource MainColor}"
                    Placeholder="Name of Server"
@@ -21,7 +21,7 @@
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"
                     Command="{Binding AddCommand}"/>
-            <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
         </StackLayout>
