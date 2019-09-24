@@ -32,7 +32,15 @@ namespace WebTool.ViewModels
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+                var note = "";
+
+                if (ex.Message.Contains("Unable to resolve") == true)
+                    note = "Check network connection.";
+
+                if (ex.Message.Contains("Not Found") == true)
+                    note = "Not Found";
+
+                await Application.Current.MainPage.DisplayAlert($"{note}", $"{ex.Message}", "OK");
             }
 
             IsBusy = false;
