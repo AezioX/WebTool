@@ -24,7 +24,8 @@ namespace WebTool.ViewModels
             IsBusy = true;
 
             var inputDomain = HostName ?? "";
-            var domain = inputDomain.ToLower();
+            var preDomain = inputDomain.ToLower();
+            var domain = "https://" + preDomain;
 
             var isDomainValid = await _serverChecker.CheckIfDomainIsValid(domain);
 

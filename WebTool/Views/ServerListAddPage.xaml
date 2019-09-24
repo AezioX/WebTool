@@ -12,11 +12,23 @@
                    Placeholder="Name of Server"
                    PlaceholderColor="{DynamicResource MainColor}"
                    MaxLength="50"/>
-            <Entry Text="{Binding HostName}"
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+                       Text="https://" TextColor="{DynamicResource MainColor}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontSize="Small"/>
+                <Entry Grid.Column="1"
+                   Text="{Binding HostName}"
                    TextColor="{DynamicResource MainColor}"
                    Placeholder="Domain"
                    PlaceholderColor="{DynamicResource MainColor}"
                    MaxLength="50"/>
+            </Grid>
             <Button Text="Add"
                     FontAttributes="Bold"
                     TextColor="{DynamicResource MainColor}"

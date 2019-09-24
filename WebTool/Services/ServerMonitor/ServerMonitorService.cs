@@ -26,7 +26,7 @@ namespace WebTool.Services.ServerMonitor
             var output = new ObservableCollection<Server>();
 
             //Prevents seemingly random Foundation.MonoTouch exception
-            Thread.Sleep(100);
+            Thread.Sleep(120);
 
             _servers = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
@@ -34,7 +34,7 @@ namespace WebTool.Services.ServerMonitor
             foreach(var server in _servers.MonitoredServers)
             {
                 //Prevents seemingly random Foundation.MonoTouch exception
-                Thread.Sleep(100);
+                Thread.Sleep(120);
 
                 preprocessed.Add(server);
             }

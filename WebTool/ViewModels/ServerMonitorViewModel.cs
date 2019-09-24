@@ -29,7 +29,7 @@ namespace WebTool.ViewModels
             ServersData = new ObservableCollection<Server>();
 
             //Prevents seemingly random Foundation.MonoTouch exception
-            Thread.Sleep(100);
+            Thread.Sleep(120);
 
             try
             {
