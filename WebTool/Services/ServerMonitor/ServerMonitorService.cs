@@ -21,7 +21,7 @@ namespace WebTool.Services.ServerMonitor
             _serversService = serversService;
         }
 
-        public async Task<ObservableCollection<Server>> GetUpdatedServersData()
+        public async Task<ObservableCollection<Server>> GetUpdatedServersDataAsync()
         {
             var output = new ObservableCollection<Server>();
 

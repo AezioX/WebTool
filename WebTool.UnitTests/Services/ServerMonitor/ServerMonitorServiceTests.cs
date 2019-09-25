@@ -21,7 +21,7 @@ namespace WebTool.UnitTests.Services.ServerMonitor
 
             var serverMonitorService = new ServerMonitorService(new ServerChecker(), serversService.Object);
 
-            var result = await serverMonitorService.GetUpdatedServersData();
+            var result = await serverMonitorService.GetUpdatedServersDataAsync();
 
             Assert.That(result, Is.Not.Empty);
         }
@@ -36,7 +36,7 @@ namespace WebTool.UnitTests.Services.ServerMonitor
 
             var serverMonitorService = new ServerMonitorService(new ServerChecker(), serversService.Object);
 
-            var result = await serverMonitorService.GetUpdatedServersData();
+            var result = await serverMonitorService.GetUpdatedServersDataAsync();
 
             Assert.That(result, Is.Empty);
         }

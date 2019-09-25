@@ -6,6 +6,6 @@ namespace WebTool.Services.ServerMonitor
 {
     public interface IServerMonitorService
     {
-        Task<ObservableCollection<Server>> GetUpdatedServersData();
+        Task<ObservableCollection<Server>> GetUpdatedServersDataAsync();
     }
 }

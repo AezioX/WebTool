@@ -44,7 +44,7 @@ namespace WebTool.ViewModels
 
             try
             {
-                ServersData = await _serverMonitorService.GetUpdatedServersData();
+                ServersData = await _serverMonitorService.GetUpdatedServersDataAsync();
 
                 IsBusy = false;
             }
