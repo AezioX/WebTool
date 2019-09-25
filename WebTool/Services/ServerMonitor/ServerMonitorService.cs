@@ -26,7 +26,7 @@ namespace WebTool.Services.ServerMonitor
             //Prevents seemingly random Foundation.MonoTouch exception
             Thread.Sleep(120);
 
-            _servers = await BlobCache.UserAccount.GetObject<Servers>("Servers");
+            _servers = await GetStoredServerListAsync();
 
             var preprocessed = new ObservableCollection<Server>();
             foreach(var server in _servers.MonitoredServers)
@@ -45,6 +45,16 @@ namespace WebTool.Services.ServerMonitor
             {
                 throw ex;
             }
+
+            return output;
+        }
+
+        //Had to make this to Unit Test GetUpdatedServersData()
+        public async Task<Servers> GetStoredServerListAsync()
+        {
+            var output = new Servers();
+
+            output = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
             return output;
         }
