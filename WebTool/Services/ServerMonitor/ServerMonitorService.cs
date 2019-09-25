@@ -12,6 +12,8 @@ namespace WebTool.Services.ServerMonitor
     {
         private IServerChecker _serverChecker;
 
+        private IServersService _serversService;
+
         private Servers _servers = new Servers();
 
         public ServerMonitorService(IServerChecker serverChecker)
@@ -45,16 +47,6 @@ namespace WebTool.Services.ServerMonitor
             {
                 throw ex;
             }
-
-            return output;
-        }
-
-        //Had to make this to Unit Test GetUpdatedServersData()
-        public async Task<Servers> GetStoredServerListAsync()
-        {
-            var output = new Servers();
-
-            output = await BlobCache.UserAccount.GetObject<Servers>("Servers");
 
             return output;
         }

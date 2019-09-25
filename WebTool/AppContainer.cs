@@ -41,6 +41,7 @@ namespace WebTool
             builder.RegisterType<DomainDatabaseService>().As<IDomainDatabaseService>();
             builder.RegisterType<ServerMonitorService>().As<IServerMonitorService>();
             builder.RegisterType<ServerChecker>().As<IServerChecker>();
+            builder.RegisterType<ServersService>().As<IServersService>();
 
             _container = builder.Build();
         }
