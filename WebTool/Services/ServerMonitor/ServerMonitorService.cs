@@ -16,9 +16,11 @@ namespace WebTool.Services.ServerMonitor
 
         private Servers _servers = new Servers();
 
-        public ServerMonitorService(IServerChecker serverChecker)
+        public ServerMonitorService(IServerChecker serverChecker, IServersService serversService)
         {
             _serverChecker = serverChecker;
+
+            _serversService = serversService;
         }
 
         public async Task<ObservableCollection<Server>> GetUpdatedServersData()
@@ -28,7 +30,7 @@ namespace WebTool.Services.ServerMonitor
             //Prevents seemingly random Foundation.MonoTouch exception
             Thread.Sleep(120);
 
-            _servers = await GetStoredServerListAsync();
+            _servers = await _serversService.GetStoredServerListAsync();
 
             var preprocessed = new ObservableCollection<Server>();
             foreach(var server in _servers.MonitoredServers)
