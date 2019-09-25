@@ -25,5 +25,20 @@ namespace WebTool.UnitTests.Services.ServerMonitor
 
             Assert.That(result, Is.Not.Empty);
         }
+
+        [Test]
+        public async Task GetUpdatedServersData_WhenServerListIsEmpty_ServerListIsEmpty()
+        {
+            //Set up ServersService mock object
+            var serversService = new Mock<IServersService>();
+            var servers = new Servers();
+            serversService.Setup(sS => sS.GetStoredServerListAsync()).ReturnsAsync(servers);
+
+            var serverMonitorService = new ServerMonitorService(new ServerChecker(), serversService.Object);
+
+            var result = await serverMonitorService.GetUpdatedServersData();
+
+            Assert.That(result, Is.Empty);
+        }
     }
 }
