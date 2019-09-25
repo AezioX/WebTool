@@ -27,7 +27,7 @@ namespace WebTool.ViewModels
             var preDomain = inputDomain.ToLower();
             var domain = "https://" + preDomain;
 
-            var isDomainValid = await _serverChecker.CheckIfDomainIsValid(domain);
+            var isDomainValid = await _serverChecker.CheckIfDomainIsValidAsync(domain);
 
             if(isDomainValid == true)
             {

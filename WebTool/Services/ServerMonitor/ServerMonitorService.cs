@@ -41,7 +41,7 @@ namespace WebTool.Services.ServerMonitor
 
             try
             {
-                output = await _serverChecker.Check(preprocessed);
+                output = await _serverChecker.CheckAsync(preprocessed);
             }
             catch (Exception ex)
             {

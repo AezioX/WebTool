@@ -6,8 +6,8 @@ namespace WebTool.Services.ServerMonitor
 {
     public interface IServerChecker
     {
-        Task<ObservableCollection<Server>> Check(ObservableCollection<Server> servers);
+        Task<ObservableCollection<Server>> CheckAsync(ObservableCollection<Server> servers);
 
-        Task<bool> CheckIfDomainIsValid(string domain);
+        Task<bool> CheckIfDomainIsValidAsync(string domain);
     }
 }

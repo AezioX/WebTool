@@ -15,7 +15,7 @@ namespace WebTool.Services.ServerMonitor
             _httpClient = new HttpClient();
         }
 
-        public async Task<ObservableCollection<Server>> Check(ObservableCollection<Server> servers)
+        public async Task<ObservableCollection<Server>> CheckAsync(ObservableCollection<Server> servers)
         {
             var output = new ObservableCollection<Server>();
 
@@ -58,10 +58,11 @@ namespace WebTool.Services.ServerMonitor
             return output;
         }
 
-        public async Task<bool> CheckIfDomainIsValid(string domain)
+        public async Task<bool> CheckIfDomainIsValidAsync(string domain)
         {
             var output = false;
 
+            //If domain can get a StatusCode then is valid.
             await Task.Run(async () =>
             {
                 try
