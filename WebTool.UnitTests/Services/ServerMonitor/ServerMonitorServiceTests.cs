@@ -2,10 +2,8 @@
 using NUnit.Framework;
 using WebTool.Services.ServerMonitor;
 using Moq;
-using System.Collections.ObjectModel;
 using WebTool.Models.ServerMonitor;
 using System.Threading.Tasks;
-//using System.Reactive.Linq;
 
 namespace WebTool.UnitTests.Services.ServerMonitor
 {
@@ -13,9 +11,19 @@ namespace WebTool.UnitTests.Services.ServerMonitor
     public class ServerMonitorServiceTests
     {
         [Test]
-        public async Task GetUpdatedServersData()
+        public async Task GetUpdatedServersData_WhenServerListIsNotEmpty_ServerListNotEmpty()
         {
-            
+            //Set up ServersService mock object
+            var serversService = new Mock<IServersService>();
+            var servers = new Servers();
+            servers.MonitoredServers.Add(new Server { Name = "Test" });
+            serversService.Setup(sS => sS.GetStoredServerListAsync()).ReturnsAsync(servers);
+
+            var serverMonitorService = new ServerMonitorService(new ServerChecker(), serversService.Object);
+
+            var result = await serverMonitorService.GetUpdatedServersData();
+
+            Assert.That(result, Is.Not.Empty);
         }
     }
 }
