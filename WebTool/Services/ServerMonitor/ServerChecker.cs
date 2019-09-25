@@ -62,7 +62,7 @@ namespace WebTool.Services.ServerMonitor
         {
             var output = false;
 
-            //If domain can get a StatusCode then is valid.
+            //If domain can get a StatusCode then its valid.
             await Task.Run(async () =>
             {
                 try

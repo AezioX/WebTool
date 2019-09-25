@@ -5,7 +5,6 @@ using Xamarin.Forms;
 using WebTool.Models.ServerMonitor;
 using WebTool.Services.ServerMonitor;
 using System.Threading;
-using System.Collections.Generic;
 using Akavache;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
@@ -41,7 +40,7 @@ namespace WebTool.ViewModels
             }
 
             //Prevents seemingly random Foundation.MonoTouch exception
-            Thread.Sleep(120);
+            Thread.Sleep(170);
 
             try
             {

@@ -26,7 +26,7 @@ namespace WebTool.Services.ServerMonitor
             var output = new ObservableCollection<Server>();
 
             //Prevents seemingly random Foundation.MonoTouch exception
-            Thread.Sleep(120);
+            Thread.Sleep(170);
 
             _servers = await _serversService.GetStoredServerListAsync();
 
@@ -34,7 +34,7 @@ namespace WebTool.Services.ServerMonitor
             foreach(var server in _servers.MonitoredServers)
             {
                 //Prevents seemingly random Foundation.MonoTouch exception
-                Thread.Sleep(120);
+                Thread.Sleep(170);
 
                 preprocessed.Add(server);
             }
