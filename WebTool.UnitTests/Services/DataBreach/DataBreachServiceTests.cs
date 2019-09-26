@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using NUnit.Framework;
 using WebTool.Services.DataBreach;
+using WebTool.Models.DataBreach;
+using System.Collections.ObjectModel;
 
 namespace WebTool.UnitTests.Services.DataBreach
 {
@@ -9,6 +11,7 @@ namespace WebTool.UnitTests.Services.DataBreach
     public class DataBreachServiceTests
     {
         [Test]
+        [Ignore("too many requests, reaching API limit")]
         [TestCase("test")]
         [TestCase("data")]
         [TestCase("spy")]
@@ -28,6 +31,17 @@ namespace WebTool.UnitTests.Services.DataBreach
                 result = true;
 
             Assert.That(result, Is.True);
+        }
+
+        [Test]
+        [TestCase("test")]
+        public async Task CheckAccountAsync_QueryWithCompromisedAccount_ReturnBreachResultsList(string account)
+        {
+            var dataBreachService = new DataBreachService();
+
+            var result = await dataBreachService.CheckAccountAsync(account);
+
+            Assert.That(result, Is.TypeOf<ObservableCollection<BreachResults>>());
         }
     }
 }
