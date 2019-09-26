@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\ServerMonitor\ServerMonitorServiceTests.cs" />
+    <Compile Include="Services\ServerMonitor\ServerCheckerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebTool\WebTool.csproj">
