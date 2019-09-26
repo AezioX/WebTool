@@ -11,7 +11,6 @@ namespace WebTool.UnitTests.Services.ServerMonitor
         [Test]
         [TestCase("https://www.google.com")]
         [TestCase("https://google.com")]
-        //[TestCase("thisisaninvaliddomain")]
         public async Task CheckIfDomainIsValidAsync_DomainIsValid_ReturnTrue(string domain)
         {
             var serverChecker = new ServerChecker();
