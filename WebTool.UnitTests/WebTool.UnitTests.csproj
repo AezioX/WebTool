@@ -78,11 +78,13 @@
     <Folder Include="Services\" />
     <Folder Include="Services\ServerMonitor\" />
     <Folder Include="Services\DomainDatabase\" />
+    <Folder Include="Services\DataBreach\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\ServerMonitor\ServerMonitorServiceTests.cs" />
     <Compile Include="Services\ServerMonitor\ServerCheckerTests.cs" />
     <Compile Include="Services\DomainDatabase\DomainDatabaseServiceTests.cs" />
+    <Compile Include="Services\DataBreach\DataBreachServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebTool\WebTool.csproj">
