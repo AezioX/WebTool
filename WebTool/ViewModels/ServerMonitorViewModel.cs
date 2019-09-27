@@ -40,7 +40,7 @@ namespace WebTool.ViewModels
             }
 
             //Prevents seemingly random Foundation.MonoTouch exception
-            Thread.Sleep(170);
+            Thread.Sleep(200);
 
             try
             {

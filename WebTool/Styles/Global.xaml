@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ResourceDictionary
              xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
     <!-- Main Colors: -->
     <!-- #ff0000 red AezioX's Choice-->
     <!-- #0dff00 green Default Theme-->
@@ -36,16 +37,17 @@
             <StackLayout Margin="10">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="80"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0"
-                            Source="{Binding LogoPath}"
-                            Aspect="AspectFit"/>
+                    <ff:CachedImage Grid.Column="0"
+                                    Source="{Binding LogoPath}"
+                                    HeightRequest="40"
+                                    Aspect="AspectFit"/>
                     <StackLayout Grid.Column="1">
                         <Label TextColor="{DynamicResource MainColor}"
                             Text="{Binding Name, StringFormat='Name: {0}'}"

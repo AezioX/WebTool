@@ -25,6 +25,7 @@ namespace WebTool.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             FormsMaterial.Init();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
