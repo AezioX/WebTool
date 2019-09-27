@@ -111,7 +111,7 @@
                           VerticalOptions="Start"
                           SelectionMode="None"
                           RowHeight="15"
-                          HeightRequest="90">
+                          HeightRequest="93">
                     <ListView.Header>
                         <Label Text="Type of compromised data:"
                                FontSize="Small"

@@ -595,7 +595,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Xamarin.Essentials/1.3.0": {
+      "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -631,7 +631,7 @@
           "lib/netstandard1.0/FFImageLoading.Forms.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.778463": {
+      "Xamarin.Forms/4.2.0.815419": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -2968,10 +2968,10 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.3.0": {
-      "sha512": "AI6NZ7ngolTQmUI2dnsP/t6xxwPNWXuOY1sfol2yNVPSw4RfI8+D/kjz5p7Yabl5vRtoFhI6sWDT40IK9VwlBg==",
+    "Xamarin.Essentials/1.3.1": {
+      "sha512": "+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
       "type": "package",
-      "path": "xamarin.essentials/1.3.0",
+      "path": "xamarin.essentials/1.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3016,7 +3016,7 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.3.0.nupkg.sha512",
+        "xamarin.essentials.1.3.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -3130,10 +3130,10 @@
         "xamarin.ffimageloading.forms.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.778463": {
-      "sha512": "0dGuPOn9KrS65rmVgOrV5knDYHxWkWEm7c/CLp6AKSlvOpZ40+YrN+7oX5hHE6lpX+dizLCaOE/RvYS3ONy9/Q==",
+    "Xamarin.Forms/4.2.0.815419": {
+      "sha512": "GrKE8TBjR5chew92HBcoaTuqwo6Jnpp0djVaN4/wtGQW/URZAt3Eb3zF8rQ6jRA2WKuTKm3wyPTCPrB2PekIfQ==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.778463",
+      "path": "xamarin.forms/4.2.0.815419",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3372,7 +3372,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.778463.nupkg.sha512",
+        "xamarin.forms.4.2.0.815419.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
@@ -3382,10 +3382,10 @@
       "Autofac >= 4.9.4",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.2",
-      "Xamarin.Essentials >= 1.3.0",
+      "Xamarin.Essentials >= 1.3.1",
       "Xamarin.FFImageLoading >= 2.4.11.982",
       "Xamarin.FFImageLoading.Forms >= 2.4.11.982",
-      "Xamarin.Forms >= 4.2.0.778463",
+      "Xamarin.Forms >= 4.2.0.815419",
       "akavache >= 6.5.20"
     ]
   },
@@ -3444,7 +3444,7 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.3.0, )"
+            "version": "[1.3.1, )"
           },
           "Xamarin.FFImageLoading": {
             "target": "Package",
@@ -3456,7 +3456,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.778463, )"
+            "version": "[4.2.0.815419, )"
           },
           "akavache": {
             "target": "Package",
