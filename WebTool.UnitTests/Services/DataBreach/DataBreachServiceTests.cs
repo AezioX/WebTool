@@ -43,5 +43,14 @@ namespace WebTool.UnitTests.Services.DataBreach
 
             Assert.That(result, Is.TypeOf<ObservableCollection<BreachResults>>());
         }
+
+        [Test]
+        [TestCase("fwe2asod793lkjsaf234lj0fa1")]
+        public void CheckAccountAsync_QueryWithUncompromisedAccount_ThrowException(string account)
+        {
+            var dataBreachService = new DataBreachService();
+
+            Assert.That(async () => await dataBreachService.CheckAccountAsync(account), Throws.Exception);
+        }
     }
 }
