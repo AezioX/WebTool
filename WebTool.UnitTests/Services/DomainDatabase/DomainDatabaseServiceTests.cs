@@ -32,5 +32,14 @@ namespace WebTool.UnitTests.Services.DomainDatabase
 
             Assert.That(results, Is.TypeOf<ObservableCollection<DomainsData>>());
         }
+
+        [Test]
+        [TestCase("jk324gi3g42h3g42u3hgfsa")]
+        public void CheckDomainsDatabase_NonExistentDomainString_ThrowException(string data)
+        {
+            var domainDatabaseService = new DomainDatabaseService();
+
+            Assert.That(async() => await domainDatabaseService.CheckDomainsDatabase(data), Throws.Exception);
+        }
     }
 }
