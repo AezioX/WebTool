@@ -117,17 +117,22 @@ namespace WebTool.ViewModels
 
         private async void DeleteServerList()
         {
-            try
-            {
-                var servers = new Servers();
+            var answer = await Application.Current.MainPage.DisplayAlert("", "Are you sure you want to delete the server list?", "YES", "NO");
 
-                await BlobCache.UserAccount.InsertObject("Servers", servers);
-
-                await Application.Current.MainPage.DisplayAlert("", "Server list deleted.", "OK");
-            }
-            catch (Exception ex)
+            if(answer == true)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+                try
+                {
+                    var servers = new Servers();
+
+                    await BlobCache.UserAccount.InsertObject("Servers", servers);
+
+                    await Application.Current.MainPage.DisplayAlert("", "Server list deleted.", "OK");
+                }
+                catch (Exception ex)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", $"{ex.Message}", "OK");
+                }
             }
         }
     }
