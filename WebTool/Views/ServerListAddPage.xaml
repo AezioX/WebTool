@@ -27,7 +27,8 @@
                    TextColor="{DynamicResource MainColor}"
                    Placeholder="Domain"
                    PlaceholderColor="{DynamicResource MainColor}"
-                   MaxLength="50"/>
+                   MaxLength="50"
+                   ReturnCommand="{Binding AddCommand}"/>
             </Grid>
             <Button Text="Add"
                     FontAttributes="Bold"
