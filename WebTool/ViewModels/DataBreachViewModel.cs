@@ -22,6 +22,8 @@ namespace WebTool.ViewModels
 
         private async void CheckAccount()
         {
+            IsButtonEnabled = false;
+
             Results = new ObservableCollection<BreachResults>();
 
             IsBusy = true;
@@ -44,6 +46,8 @@ namespace WebTool.ViewModels
             }
 
             IsBusy = false;
+
+            IsButtonEnabled = true;
         }
 
         private async void ShowInfo()
@@ -65,6 +69,14 @@ namespace WebTool.ViewModels
             get => _account;
 
             set => SetProperty(ref _account, value);
+        }
+
+        private bool _isButtonEnabled = true;
+        public bool IsButtonEnabled
+        {
+            get => _isButtonEnabled;
+
+            set => SetProperty(ref _isButtonEnabled, value);
         }
     }
 }

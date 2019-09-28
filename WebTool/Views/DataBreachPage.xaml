@@ -32,7 +32,8 @@
                         Text="Check" TextColor="{DynamicResource MainColor}"
                         FontSize="Small"
                         FontAttributes="Bold"
-                        Command="{Binding CheckAccountCommand}"/>
+                        Command="{Binding CheckAccountCommand}"
+                        IsEnabled="{Binding IsButtonEnabled}"/>
             </Grid>
             <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
                 <ListView ItemTemplate="{DynamicResource dataBreachResultTemplate}"
