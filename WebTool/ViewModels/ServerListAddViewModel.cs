@@ -21,6 +21,8 @@ namespace WebTool.ViewModels
 
         private async void Add()
         {
+            IsButtonEnabled = false;
+
             IsBusy = true;
 
             var inputDomain = HostName ?? "";
@@ -59,6 +61,8 @@ namespace WebTool.ViewModels
 
                 await Application.Current.MainPage.DisplayAlert("Error", $"Use a valid domain and check network connection.", "OK");
             }
+
+            IsButtonEnabled = true;
         }
 
         private string _name;
@@ -75,6 +79,14 @@ namespace WebTool.ViewModels
             get => _hostName;
 
             set => SetProperty(ref _hostName, value);
+        }
+
+        private bool _isButtonEnabled = true;
+        public bool IsButtonEnabled
+        {
+            get => _isButtonEnabled;
+
+            set => SetProperty(ref _isButtonEnabled, value);
         }
     }
 }
