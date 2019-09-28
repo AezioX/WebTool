@@ -25,7 +25,8 @@
                 <Entry Grid.Column="0"
                        Text="{Binding Account}" TextColor="{DynamicResource MainColor}"
                        Placeholder="Email or Account Name" PlaceholderColor="{DynamicResource MainColor}"
-                       MaxLength="50">
+                       MaxLength="50"
+                       ReturnCommand="{Binding CheckAccountCommand}">
                 </Entry>
                 <Button Grid.Column="1"
                         Text="Check" TextColor="{DynamicResource MainColor}"
