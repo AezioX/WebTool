@@ -20,6 +20,8 @@ namespace WebTool.ViewModels
 
         private async void Search()
         {
+            IsButtonEnabled = false;
+
             DomainSearchResults = new ObservableCollection<DomainsData>();
 
             IsBusy = true;
@@ -41,6 +43,8 @@ namespace WebTool.ViewModels
             }
 
             IsBusy = false;
+
+            IsButtonEnabled = true;
         }
 
         private string _domain;
@@ -57,6 +61,14 @@ namespace WebTool.ViewModels
             get => _domainSearchResults;
 
             set => SetProperty(ref _domainSearchResults, value);
+        }
+
+        private bool _isButtonEnabled = true;
+        public bool IsButtonEnabled
+        {
+            get => _isButtonEnabled;
+
+            set => SetProperty(ref _isButtonEnabled, value);
         }
     }
 }

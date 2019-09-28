@@ -25,7 +25,8 @@
                         Text="Search" TextColor="{DynamicResource MainColor}"
                         FontSize="Small"
                         FontAttributes="Bold"
-                        Command="{Binding SearchCommand}"/>
+                        Command="{Binding SearchCommand}"
+                        IsEnabled="{Binding IsButtonEnabled}"/>
                 </Grid>
             <ActivityIndicator HeightRequest="15" IsRunning="{Binding IsBusy}" Color="{DynamicResource MainColor}"/>
             <ListView BackgroundColor="{DynamicResource DarkColor}"
