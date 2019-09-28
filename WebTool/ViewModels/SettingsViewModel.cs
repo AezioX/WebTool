@@ -112,6 +112,10 @@ namespace WebTool.ViewModels
                     await BlobCache.UserAccount.InsertObject("Servers", servers);
 
                     await Application.Current.MainPage.DisplayAlert("", "Default server list restored.", "OK");
+
+                    var serverMonitor = AppContainer.Resolve<ServerMonitorViewModel>();
+                    serverMonitor.LastUpdated = "Default server list restored.";
+                    serverMonitor.ServersData = new System.Collections.ObjectModel.ObservableCollection<Server>();
                 }
                 catch (Exception ex)
                 {
@@ -141,7 +145,7 @@ namespace WebTool.ViewModels
             }
         }
 
-        private string _webToolVersion = "WebTool V1.0";
+        private string _webToolVersion = "WebTool V1.0.73";
         public string WebToolVersion
         {
             get => _webToolVersion;
