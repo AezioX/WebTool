@@ -140,5 +140,13 @@ namespace WebTool.ViewModels
                 }
             }
         }
+
+        private string _webToolVersion = "WebTool V1.0";
+        public string WebToolVersion
+        {
+            get => _webToolVersion;
+
+            set => SetProperty(ref _webToolVersion, value);
+        }
     }
 }

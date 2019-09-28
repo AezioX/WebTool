@@ -7,7 +7,7 @@
              Title="Settings">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Margin="5">
+            <StackLayout Margin="10">
                 <Label Text="Theme selection" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource MainColor}"/>
                 <Button Text="Default Theme" TextColor="{DynamicResource MainColor}"
                     Command="{Binding ChangeToDefaultThemeCommand}"/>
@@ -19,6 +19,9 @@
                     Command="{Binding DeleteServerListCommand}"/>
                 <Button Text="Restore Default Server List" TextColor="{DynamicResource MainColor}"
                     Command="{Binding RestoreServerListCommand}"/>
+                <Label Text="{Binding WebToolVersion}" TextColor="{DynamicResource MainColor}"
+                       FontSize="Micro" FontAttributes="Bold"
+                       VerticalOptions="EndAndExpand"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
