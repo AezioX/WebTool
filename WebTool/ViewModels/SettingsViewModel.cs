@@ -137,6 +137,10 @@ namespace WebTool.ViewModels
                     await BlobCache.UserAccount.InsertObject("Servers", servers);
 
                     await Application.Current.MainPage.DisplayAlert("", "Server list deleted.", "OK");
+
+                    var serverMonitor = AppContainer.Resolve<ServerMonitorViewModel>();
+                    serverMonitor.LastUpdated = "";
+                    serverMonitor.ServersData = new System.Collections.ObjectModel.ObservableCollection<Server>();
                 }
                 catch (Exception ex)
                 {
