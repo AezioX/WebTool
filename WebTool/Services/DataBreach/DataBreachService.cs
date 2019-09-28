@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WebTool.Models.DataBreach;
@@ -45,6 +46,12 @@ namespace WebTool.Services.DataBreach
                     dataClasses.Add(new DataType { Name = name });
                 }
 
+                //Remove HTML from Description
+                string noHTML = Regex.Replace(result.Description, @"<[^>]+>|&nbsp;", "").Trim();
+                //Remove multiple spaces
+                string preDescription = Regex.Replace(noHTML, @"\s{2,}", " ");
+                //Remove &quot; strings
+                string finalDescription = preDescription.Replace("&quot;", string.Empty);
 
                 output.Add(new BreachResults
                 {
@@ -57,7 +64,7 @@ namespace WebTool.Services.DataBreach
                     AddedDate = result.AddedDate,
                     ModifiedDate = result.ModifiedDate,
                     PwnCount = result.PwnCount,
-                    Description = result.Description,
+                    Description = finalDescription,
                     LogoPath = result.LogoPath,
                     IsVerified = result.IsVerified.ToString(),
                     IsFabricated = result.IsFabricated.ToString(),
