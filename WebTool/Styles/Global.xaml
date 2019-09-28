@@ -31,6 +31,11 @@
     <FlyoutItem x:Key="RefreshIcon" Icon="refreshgreen.png"/>
     <FlyoutItem x:Key="InfoIcon" Icon="infogreen.png"/>
 
+    <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#171717"/>
+        <!--101010 2a2a2a-->
+    </Style>
+
     <!-- DataTemplates -->
     <DataTemplate x:Key="dataBreachResultTemplate">
         <ViewCell>
