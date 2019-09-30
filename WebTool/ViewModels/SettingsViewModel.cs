@@ -149,7 +149,7 @@ namespace WebTool.ViewModels
             }
         }
 
-        private string _webToolVersion = "WebTool V1.0.73";
+        private string _webToolVersion = "WebTool V1.0";
         public string WebToolVersion
         {
             get => _webToolVersion;
