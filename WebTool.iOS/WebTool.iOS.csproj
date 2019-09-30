@@ -71,9 +71,6 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png" />
@@ -93,6 +90,21 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180-1.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <InterfaceDefinition Include="BlackLaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-1.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-10.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-11.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-2.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-3.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-4.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-5.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-6.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-7.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-8.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-9.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -147,5 +159,8 @@
     <BundleResource Include="Resources\refreshred.png" />
     <BundleResource Include="Resources\infogreen.png" />
     <BundleResource Include="Resources\infored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\SplashImage.imageset\" />
   </ItemGroup>
 </Project>
