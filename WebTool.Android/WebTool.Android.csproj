@@ -195,10 +195,6 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\WebToolIcon.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\mipmap-hdpi\ic_webtool_foreground.png">
       <SubType></SubType>
       <Generator></Generator>
@@ -272,6 +268,10 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\splash.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_webtool.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
