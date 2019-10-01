@@ -1,10 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebTool.Views.DomainDatabaseInfoPage">
+             x:Class="WebTool.Views.DomainDatabaseInfoPage"
+             BackgroundColor="{DynamicResource DarkColor}"
+             Shell.TitleColor="{DynamicResource MainColor}"
+             Title="Info">
     <ContentPage.Content>
-        <StackLayout>
-
+        <StackLayout Margin="5">
+            <Label TextColor="{DynamicResource MainColor}"
+                   FontSize="Small"
+                   LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Domain Database finds registered domains containing particular words/phrases/numbers or symbols."/>
+                        <Span Text="The database contains more than 260 million of registered domains and 1000+ TLDS including newGTLDs."/>
+                        <Span Text="API provided by domainsdb.info. For more info visit their website:"/>
+                        <Span Text="domainsdb.info"
+                              TextColor="Blue"
+                              TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                              <TapGestureRecognizer Command="{Binding GoToSiteCommand}"
+                                          CommandParameter="https://domainsdb.info/"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+               </Label.FormattedText>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
