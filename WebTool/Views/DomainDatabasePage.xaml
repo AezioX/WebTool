@@ -5,6 +5,13 @@
              BackgroundColor="{DynamicResource DarkColor}"
              Shell.TitleColor="{DynamicResource MainColor}"
              Title="Domain Database">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Info"
+                     IconImageSource="{DynamicResource InfoIcon}"
+                     Command="{Binding ShowInfoCommand}"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="5">
             <Grid>

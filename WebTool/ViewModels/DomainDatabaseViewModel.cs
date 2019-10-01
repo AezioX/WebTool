@@ -13,6 +13,8 @@ namespace WebTool.ViewModels
 
         public ICommand SearchCommand => new Command(Search);
 
+        public ICommand ShowInfoCommand => new Command(ShowInfo);
+
         public DomainDatabaseViewModel(IDomainDatabaseService domainDatabaseService)
         {
             _domainDatabaseService = domainDatabaseService;
@@ -45,6 +47,11 @@ namespace WebTool.ViewModels
             IsBusy = false;
 
             IsButtonEnabled = true;
+        }
+
+        private async void ShowInfo()
+        {
+            await Shell.Current.GoToAsync("DomainDatabaseInfoPage");
         }
 
         private string _domain;
