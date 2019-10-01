@@ -25,6 +25,7 @@ namespace WebTool
             builder.RegisterType<ServerListAddPage>().SingleInstance();
             builder.RegisterType<HomePage>().SingleInstance();
             builder.RegisterType<DataBreachInfoPage>().SingleInstance();
+            builder.RegisterType<DomainDatabaseInfoPage>().SingleInstance();
 
             //ViewModels
             builder.RegisterType<DataBreachViewModel>().SingleInstance();
@@ -34,6 +35,7 @@ namespace WebTool
             builder.RegisterType<ServerListAddViewModel>().SingleInstance();
             builder.RegisterType<HomeViewModel>().SingleInstance();
             builder.RegisterType<DataBreachInfoViewModel>().SingleInstance();
+            builder.RegisterType<DomainDatabaseInfoViewModel>().SingleInstance();
 
             //Services
             builder.RegisterType<DataBreachService>().As<IDataBreachService>();
