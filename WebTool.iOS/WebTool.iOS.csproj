@@ -105,6 +105,7 @@
     <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-7.png" />
     <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-8.png" />
     <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-9.png" />
+    <ImageAsset Include="Assets.xcassets\SplashImage.imageset\splash-12.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
