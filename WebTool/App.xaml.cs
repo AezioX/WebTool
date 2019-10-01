@@ -53,6 +53,7 @@ namespace WebTool
         {
             Routing.RegisterRoute("ServerListAddPage", typeof(ServerListAddPage));
             Routing.RegisterRoute("DataBreachInfoPage", typeof(DataBreachInfoPage));
+            Routing.RegisterRoute("DomainDatabaseInfoPage", typeof(DomainDatabaseInfoPage));
         }
 
         private void LoadSavedTheme()
